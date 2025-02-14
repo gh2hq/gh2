@@ -1,22 +1,22 @@
-import charming as cm
+import lighght as gh
 
 char = 'O'
 
 
-@cm.setup
+@gh.setup
 def setup():
-    cm.full_screen()
-    cm.no_cursor()
+    gh.full_screen()
+    gh.no_cursor()
 
 
-@cm.draw
+@gh.draw
 def draw():
-    cm.background(' ')
-    cm.fill(char)
-    cm.rect(0, 0, 10, 10)
+    gh.background(' ')
+    gh.fill(char)
+    gh.rect(0, 0, 10, 10)
 
 
-@cm.mouse_released
+@gh.mouse_released
 def mouse_released():
     global char
     if char == 'O':
@@ -25,4 +25,4 @@ def mouse_released():
         char = 'O'
 
 
-cm.run()
+gh.run()

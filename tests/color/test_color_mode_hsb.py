@@ -1,8 +1,8 @@
-import charming as cm
+import lighght as gh
 
-cm.full_screen()
-cm.color_mode(cm.HSB)
-cm.no_cursor()
+gh.full_screen()
+gh.color_mode(gh.HSB)
+gh.no_cursor()
 
 # rainbows
 w = 30
@@ -11,7 +11,7 @@ h = 360 / w
 for hue in range(360):
     i = hue % w
     j = hue // w
-    cm.stroke(" ", (hue, 100, 100), (hue, 100, 100))
-    cm.point(i, j)
+    gh.stroke(" ", (hue, 100, 100), (hue, 100, 100))
+    gh.point(i, j)
 
-cm.run()
+gh.run()

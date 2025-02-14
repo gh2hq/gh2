@@ -1,25 +1,25 @@
-import charming as cm
+import lighght as gh
 
-cm.full_screen()
-cm.no_cursor()
+gh.full_screen()
+gh.no_cursor()
 
 # basic colors
 colors = [
-    cm.RED,
-    cm.BLACK,
-    cm.CYAN,
-    cm.YELLOW,
-    cm.GREEN,
-    cm.BLUE,
-    cm.WHITE,
-    cm.MAGENTA
+    gh.RED,
+    gh.BLACK,
+    gh.CYAN,
+    gh.YELLOW,
+    gh.GREEN,
+    gh.BLUE,
+    gh.WHITE,
+    gh.MAGENTA
 ]
 
-cm.stroke_weight(1)
+gh.stroke_weight(1)
 for i, c in enumerate(colors):
     x = 5
     y = 2
-    cm.stroke("@", c, c)
-    cm.point(i * 5 + x , y)
+    gh.stroke("@", c, c)
+    gh.point(i * 5 + x , y)
 
-cm.run()
+gh.run()

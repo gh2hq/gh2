@@ -1,12 +1,12 @@
-import charming as cm
+import lighght as gh
 
-cm.full_screen()
-cm.no_cursor()
+gh.full_screen()
+gh.no_cursor()
 
-cm.stroke('%')
-cm.translate(cm.get_width() / 2, cm.get_height() / 2)
-cm.shear_y(cm.PI / 3.0)
-cm.rect(-5, -5, 10, 10)
+gh.stroke('%')
+gh.translate(gh.get_width() / 2, gh.get_height() / 2)
+gh.shear_y(gh.PI / 3.0)
+gh.rect(-5, -5, 10, 10)
 
 
-cm.run()
+gh.run()

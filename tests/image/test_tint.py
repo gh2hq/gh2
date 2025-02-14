@@ -1,13 +1,13 @@
-import charming as cm
+import lighght as gh
 
-cm.full_screen()
-cm.no_cursor()
+gh.full_screen()
+gh.no_cursor()
 
-img = cm.load_image('../assets/images/test.png')
-cm.tint('O', cm.RED)
-cm.image(img, 0, 0, 30, 15)
+img = gh.load_image('../assets/images/test.png')
+gh.tint('O', gh.RED)
+gh.image(img, 0, 0, 30, 15)
 
-cm.no_tint()
-cm.image(img, 32, 0, 30, 15)
+gh.no_tint()
+gh.image(img, 32, 0, 30, 15)
 
-cm.run()
+gh.run()

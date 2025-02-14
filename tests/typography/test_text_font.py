@@ -1,20 +1,20 @@
-import charming as cm
+import lighght as gh
 
-cm.full_screen()
-cm.no_cursor()
-cm.text_size(cm.BIG)
+gh.full_screen()
+gh.no_cursor()
+gh.text_size(gh.BIG)
 
-font_list = cm.get_font_list()
+font_list = gh.get_font_list()
 text = 'charming'
 
-th = cm.text_height(text)
-cm.text(text, 0, 0)
+th = gh.text_height(text)
+gh.text(text, 0, 0)
 
-cm.text_font(font_list[0])
-th1 = cm.text_height(text)
-cm.text(text, 0, th)
+gh.text_font(font_list[0])
+th1 = gh.text_height(text)
+gh.text(text, 0, th)
 
-cm.text_font(font_list[1])
-cm.text(text, 0, th + th1)
+gh.text_font(font_list[1])
+gh.text(text, 0, th + th1)
 
-cm.run()
+gh.run()

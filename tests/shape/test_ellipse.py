@@ -1,6 +1,6 @@
-import charming as cm
+import lighght as gh
 
-cm.full_screen()
-cm.no_cursor()
-cm.ellipse(12, 6, 20, 10)
-cm.run()
+gh.full_screen()
+gh.no_cursor()
+gh.ellipse(12, 6, 20, 10)
+gh.run()

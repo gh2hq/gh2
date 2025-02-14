@@ -1,4 +1,4 @@
-import charming as app
+import lighght as app
 
 img = None
 

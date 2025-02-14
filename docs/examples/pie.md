@@ -5,7 +5,7 @@ There is a pie chart for mock data about the proportion of the population of dif
 ![preview.md](https://raw.githubusercontent.com/charming-art/public-files/master/example_piechart.png)
 
 ```py
-import charming as cm
+import lighght as gh
 from scales import scale_linear, scale_ordinal
 
 
@@ -29,29 +29,29 @@ people = [
 
 data = stack(people)
 
-cm.print(data)
+gh.print(data)
 theta = scale_linear(
     [0, people[-1]['end']],
-    [-cm.HALF_PI, cm.TWO_PI - cm.HALF_PI]
+    [-gh.HALF_PI, gh.TWO_PI - gh.HALF_PI]
 )
 color = scale_ordinal(list(map(lambda x: x['name'], data)), [
-    cm.CColor(('🖐🏻', 2),  (91, 143, 249), (91, 143, 249)),
-    cm.CColor(('🖐️', 2), (97, 221, 170), (97, 221, 170)),
-    cm.CColor(('🖐🏿', 2), (255,107,59), (255,107,59)),
+    gh.CColor(('🖐🏻', 2),  (91, 143, 249), (91, 143, 249)),
+    gh.CColor(('🖐️', 2), (97, 221, 170), (97, 221, 170)),
+    gh.CColor(('🖐🏿', 2), (255,107,59), (255,107,59)),
 ])
 
 
 # environment
-cm.full_screen(cm.DOUBLE)
-cm.color_mode(cm.RGB)
-cm.no_cursor()
+gh.full_screen(gh.DOUBLE)
+gh.color_mode(gh.RGB)
+gh.no_cursor()
 
 # draw
-cm.translate(cm.get_width() / 2, cm.get_height() / 2)
+gh.translate(gh.get_width() / 2, gh.get_height() / 2)
 for d in data:
-    cm.no_stroke()
-    cm.fill(color(d['name']))
-    cm.arc(0, 0, 18, 18, theta(d['start']), theta(d['end']), cm.PIE)
+    gh.no_stroke()
+    gh.fill(color(d['name']))
+    gh.arc(0, 0, 18, 18, theta(d['start']), theta(d['end']), gh.PIE)
 
-cm.run()
+gh.run()
 ```

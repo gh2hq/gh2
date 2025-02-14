@@ -1,18 +1,18 @@
-import charming as cm
+import lighght as gh
 
-cm.full_screen()
-cm.no_cursor()
+gh.full_screen()
+gh.no_cursor()
 
 text = 'C'
-height = cm.get_height()
-width = cm.get_width()
+height = gh.get_height()
+width = gh.get_width()
 
-cm.text(text, 0, (height - cm.text_height(text)) / 2)
+gh.text(text, 0, (height - gh.text_height(text)) / 2)
 
-cm.text_size(cm.BIG)
-cm.text(text, 10, (height - cm.text_height(text)) / 2)
+gh.text_size(gh.BIG)
+gh.text(text, 10, (height - gh.text_height(text)) / 2)
 
-cm.text_size(cm.LARGE)
-cm.text(text, 20, (height - cm.text_height(text)) / 2)
+gh.text_size(gh.LARGE)
+gh.text(text, 20, (height - gh.text_height(text)) / 2)
 
-cm.run()
+gh.run()

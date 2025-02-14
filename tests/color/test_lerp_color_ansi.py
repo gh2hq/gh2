@@ -1,17 +1,17 @@
-import charming as cm
+import lighght as gh
 
-cm.full_screen()
-cm.no_cursor()
+gh.full_screen()
+gh.no_cursor()
 
-start = cm.CColor('a', cm.BLUE, cm.RED)  # start color
-end = cm.CColor('z', cm.GREEN, cm.YELLOW)  # end color
+start = gh.CColor('a', gh.BLUE, gh.RED)  # start color
+end = gh.CColor('z', gh.GREEN, gh.YELLOW)  # end color
 
-cm.stroke_weight(1)
+gh.stroke_weight(1)
 n = 10
 for i in range(n):
     t = i / n
-    c = cm.lerp_color(start, end, t)
-    cm.stroke(c)
-    cm.point(i * 5 + 5, 2)
+    c = gh.lerp_color(start, end, t)
+    gh.stroke(c)
+    gh.point(i * 5 + 5, 2)
 
-cm.run()
+gh.run()

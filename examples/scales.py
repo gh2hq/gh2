@@ -1,4 +1,4 @@
-from charming import map
+from lighght import map
 
 
 def scale_band(domain, range, padding=0):

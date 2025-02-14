@@ -1,4 +1,4 @@
-import charming as cm
+import lighght as gh
 
 
 bar_width = 5
@@ -6,32 +6,32 @@ bar_count = 0
 bars = []
 
 
-@cm.setup
+@gh.setup
 def setup():
     global bars, bar_count
-    cm.full_screen()
-    cm.no_cursor()
-    bar_count = cm.floor(cm.get_width() / bar_width)
+    gh.full_screen()
+    gh.no_cursor()
+    bar_count = gh.floor(gh.get_width() / bar_width)
     bars = [0 for _ in range(bar_count)]
 
 
-@cm.draw
+@gh.draw
 def draw():
     global bars
-    i = int(cm.random(bar_count))
+    i = int(gh.random(bar_count))
     bars[i] += 1
 
-    cm.background(' ')
-    cm.fill('Q')
-    cm.no_stroke()
+    gh.background(' ')
+    gh.fill('Q')
+    gh.no_stroke()
 
     for index, bar_height in enumerate(bars):
-        cm.rect(
+        gh.rect(
             bar_width * index,
-            cm.get_height() - bar_height,
+            gh.get_height() - bar_height,
             bar_width,
             bar_height
         )
 
 
-cm.run()
+gh.run()

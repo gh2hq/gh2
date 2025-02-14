@@ -1,14 +1,14 @@
-import charming as cm
+import lighght as gh
 
-cm.full_screen()
-cm.no_cursor()
+gh.full_screen()
+gh.no_cursor()
 
-img = cm.CImage(100, 100)
+img = gh.CImage(100, 100)
 img.load_pixels()
 for i in range(img.width):
     for j in range(img.height):
         img.set(i, j, (255, 0, 0, 1))
 img.update_pixels()
-cm.image(img, 0, 0, 10, 5)
+gh.image(img, 0, 0, 10, 5)
 
-cm.run()
+gh.run()

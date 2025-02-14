@@ -1,4 +1,4 @@
-import charming as cm
+import lighght as gh
 from scales import scale_linear, scale_band, scale_ordinal
 
 # mock data
@@ -22,8 +22,8 @@ data = [
 ]
 
 # open canvas
-cm.full_screen(cm.DOUBLE)
-cm.no_cursor()
+gh.full_screen(gh.DOUBLE)
+gh.no_cursor()
 
 # chart options
 margin = {
@@ -32,24 +32,24 @@ margin = {
     'bottom': 5,
     'left': 5
 }
-width = cm.get_width() - margin['left'] - margin['right']
-height = cm.get_height() - margin['top'] - margin['bottom']
+width = gh.get_width() - margin['left'] - margin['right']
+height = gh.get_height() - margin['top'] - margin['bottom']
 
 # scales
-max_data = cm.max(data, key=lambda d: d['value'])
+max_data = gh.max(data, key=lambda d: d['value'])
 names = [d['name'] for d in data]
 colors = [
-    ('🌈', cm.GREEN),
-    ('🦠', cm.RED),
-    (('⚠️', 2), cm.YELLOW),
-    (('☠️', 2), cm.WHITE)
+    ('🌈', gh.GREEN),
+    ('🦠', gh.RED),
+    (('⚠️', 2), gh.YELLOW),
+    (('☠️', 2), gh.WHITE)
 ]
 x_scale = scale_band(names, [0, width], padding=2)
 y_scale = scale_linear([0, max_data['value']], [height, 0])
 color_scale = scale_ordinal(names, colors)
 
 # draw
-cm.translate(margin['left'], margin['top'])
+gh.translate(margin['left'], margin['top'])
 
 # bars
 for d in data:
@@ -60,24 +60,24 @@ for d in data:
     ch, bg = color_scale(name)
 
     # bars
-    cm.no_stroke()
-    cm.fill(ch, bg=bg)
-    cm.rect(x, y, int(bw), height - y)
+    gh.no_stroke()
+    gh.fill(ch, bg=bg)
+    gh.rect(x, y, int(bw), height - y)
 
     # value
-    cm.stroke()
-    cm.text_align(cm.CENTER)
-    cm.text(str(value), x + bw / 2 + 1, y - 2)
+    gh.stroke()
+    gh.text_align(gh.CENTER)
+    gh.text(str(value), x + bw / 2 + 1, y - 2)
 
 # bottom axes
-cm.stroke('-')
-cm.line(0, height, width, height)
+gh.stroke('-')
+gh.line(0, height, width, height)
 for name in x_scale.domain():
     x = x_scale(name)
     bw = x_scale.band_width()
-    cm.stroke()
-    cm.text_align(cm.CENTER)
-    cm.text(name, x + bw / 2 + 1, height + 1)
+    gh.stroke()
+    gh.text_align(gh.CENTER)
+    gh.text(name, x + bw / 2 + 1, height + 1)
 
 if __name__ == "__main__":
-    cm.run()
+    gh.run()

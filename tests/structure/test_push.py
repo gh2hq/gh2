@@ -1,17 +1,17 @@
-import charming as cm
+import lighght as gh
 
-cm.full_screen()
-cm.no_cursor()
+gh.full_screen()
+gh.no_cursor()
 
-cm.ellipse(5, 5, 10, 5)
+gh.ellipse(5, 5, 10, 5)
 
-cm.push()
-cm.fill('+', cm.YELLOW, cm.CYAN)
-cm.stroke('O', cm.BLUE, cm.GREEN)
-cm.translate(15, 0)
-cm.ellipse(5, 5, 10, 5)
-cm.pop()
+gh.push()
+gh.fill('+', gh.YELLOW, gh.CYAN)
+gh.stroke('O', gh.BLUE, gh.GREEN)
+gh.translate(15, 0)
+gh.ellipse(5, 5, 10, 5)
+gh.pop()
 
-cm.ellipse(35, 5, 10, 5)
+gh.ellipse(35, 5, 10, 5)
 
-cm.run()
+gh.run()

@@ -1,11 +1,11 @@
-import charming as cm
+import lighght as gh
 
-cm.full_screen()
-cm.no_cursor()
-cm.quad(
+gh.full_screen()
+gh.no_cursor()
+gh.quad(
     9, 0,  # point1
     27 + 5, 2,  # point2
     19, 12,  # point3
     9, 7  # point4
 )
-cm.run()
+gh.run()

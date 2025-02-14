@@ -1,4 +1,4 @@
-import charming as cm
+import lighght as gh
 from random import shuffle
 
 vertices = None
@@ -51,22 +51,22 @@ def swap(list, i, j):
     list[j] = t
 
 
-@cm.setup
+@gh.setup
 def setup():
     # init environment
-    cm.full_screen()
-    cm.no_cursor()
-    cm.color_mode(cm.HSB)
+    gh.full_screen()
+    gh.no_cursor()
+    gh.color_mode(gh.HSB)
 
     # init vars
     global vertices, max_depth, width, height
-    width, height = cm.get_width(), cm.get_height()
+    width, height = gh.get_width(), gh.get_height()
     graph = generate_graph(width, height)
-    vertices = dfs(graph, int(cm.random(width * height)))
-    max_depth = cm.max(map(lambda x: x[1], vertices))
+    vertices = dfs(graph, int(gh.random(width * height)))
+    max_depth = gh.max(map(lambda x: x[1], vertices))
 
 
-@cm.draw
+@gh.draw
 def draw():
     global i
     cnt = 10
@@ -78,11 +78,11 @@ def draw():
 
 def fill(vertex):
     index, depth = vertex
-    hue = cm.map(depth, 0, max_depth, 0, 360)
+    hue = gh.map(depth, 0, max_depth, 0, 360)
     c = (int(hue), 100, 100)
     x, y = index % width, int(index / width)
-    cm.stroke(" ", c, c)
-    cm.point(x, y)
+    gh.stroke(" ", c, c)
+    gh.point(x, y)
 
 
-cm.run()
+gh.run()

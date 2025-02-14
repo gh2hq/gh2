@@ -1,16 +1,16 @@
-import charming as cm
+import lighght as gh
 
-cm.full_screen()
-cm.no_cursor()
-cm.no_stroke()
+gh.full_screen()
+gh.no_cursor()
+gh.no_stroke()
 
 # Outer  ellipse
-cm.fill('O', cm.RED, cm.YELLOW)
-cm.ellipse_mode(cm.RADIUS) 
-cm.ellipse(12, 6, 12, 6)
+gh.fill('O', gh.RED, gh.YELLOW)
+gh.ellipse_mode(gh.RADIUS) 
+gh.ellipse(12, 6, 12, 6)
 
 # Inner ellipse
-cm.fill('V', cm.BLUE, cm.GREEN)
-cm.ellipse_mode(cm.CENTER)
-cm.ellipse(12, 6, 12, 6)
-cm.run()
+gh.fill('V', gh.BLUE, gh.GREEN)
+gh.ellipse_mode(gh.CENTER)
+gh.ellipse(12, 6, 12, 6)
+gh.run()

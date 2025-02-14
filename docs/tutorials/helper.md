@@ -4,19 +4,19 @@ There some useful helper functions.
 
 ## Print
 
-Because Charming use the terminal as the canvas to paint, so it is impossible for you to print some information to the console. Instead you can use the `print` function from Charming to print some information to file named `charming.log`.
+Because Lighght use the terminal as the canvas to paint, so it is impossible for you to print some information to the console. Instead you can use the `print` function from Lighght to print some information to file named `lighght.log`.
 
 ### Single variable
 
 ```py
-import charming as app
+import lighght as app
 
 n = 1
 app.print(n)
 ```
 
 ```plain text
-# charming.log
+# lighght.log
 
 DEBUG:root:1
 ```
@@ -24,7 +24,7 @@ DEBUG:root:1
 ### Multiple variables
 
 ```py
-import charming as app
+import lighght as app
 
 number = 123
 string = 'hello'
@@ -38,6 +38,6 @@ app.print(number, string, dict, key=tuple)
 ```
 
 ```plain text
-# charming.log
+# lighght.log
 DEBUG:root:123, 'hello', {'name': 'charming', 'awesome': True}, {'key': (0, 1)}
 ```

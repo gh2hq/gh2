@@ -1,4 +1,4 @@
-import charming as cm
+import lighght as gh
 
 chars = ['💘', '🌈', 'A', ('⏰', 2), '🧚', '爱']
 texts = [
@@ -10,38 +10,38 @@ texts = [
 x = 0
 
 
-@cm.setup
+@gh.setup
 def setup():
-    cm.full_screen(cm.DOUBLE)
-    cm.frame_rate(2)
-    cm.no_cursor()
+    gh.full_screen(gh.DOUBLE)
+    gh.frame_rate(2)
+    gh.no_cursor()
 
 
-@cm.draw
+@gh.draw
 def draw():
     global x
     size = 5
-    ch = chars[cm.get_frame_count() % len(chars)]
+    ch = chars[gh.get_frame_count() % len(chars)]
     y = 10
     x += 2
 
-    cm.background(" ")
-    cm.no_stroke()
-    cm.fill(ch)
+    gh.background(" ")
+    gh.no_stroke()
+    gh.fill(ch)
 
     # polygan
-    cm.begin_shape()
-    cm.vertex(x, y)
-    cm.vertex(x + size, y)
-    cm.vertex(x + size, y - size)
-    cm.vertex(x + size * 2, y)
-    cm.vertex(x, y + size * 2)
-    cm.end_shape(cm.CLOSE)
+    gh.begin_shape()
+    gh.vertex(x, y)
+    gh.vertex(x + size, y)
+    gh.vertex(x + size, y - size)
+    gh.vertex(x + size * 2, y)
+    gh.vertex(x, y + size * 2)
+    gh.end_shape(gh.CLOSE)
 
     # text
-    cm.stroke()
+    gh.stroke()
     for i, t in enumerate(texts):
-        cm.text(t, 0, i)
+        gh.text(t, 0, i)
 
 
-cm.run()
+gh.run()

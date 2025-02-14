@@ -1,9 +1,9 @@
-import charming as cm
+import lighght as gh
 
-cm.full_screen()
-cm.no_cursor()
+gh.full_screen()
+gh.no_cursor()
 
-img = cm.load_image('../assets/images/test.png')
-cm.image(img, 0, 0, 30, 15)
+img = gh.load_image('../assets/images/test.png')
+gh.image(img, 0, 0, 30, 15)
 
-cm.run()
+gh.run()

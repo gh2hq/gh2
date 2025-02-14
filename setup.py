@@ -1,11 +1,11 @@
 import re
 from setuptools import setup
 
-with open("src/charming/__init__.py", encoding="utf8") as f:
+with open("src/lighght/__init__.py", encoding="utf8") as f:
     version = re.search(r'__version__ = "(.*?)"', f.read()).group(1)
 
 setup(
-    name="charming",
+    name="lighght",
     version=version,
     install_requires=[
         'pyfiglet >= 0.7.2',

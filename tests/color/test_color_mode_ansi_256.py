@@ -1,12 +1,12 @@
-import charming as cm
+import lighght as gh
 
-cm.full_screen()
-cm.no_cursor()
+gh.full_screen()
+gh.no_cursor()
 
 for i in range(256):
     x = i % 32
     y = i // 32
-    cm.stroke(' ', i, i)
-    cm.point(x, y)
+    gh.stroke(' ', i, i)
+    gh.point(x, y)
 
-cm.run()
+gh.run()

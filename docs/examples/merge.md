@@ -8,7 +8,7 @@ This is visualization for merge sort which shows the progress of sorting traditi
 
 ```py
 from random import shuffle
-import charming as cm
+import lighght as gh
 
 sorted = None
 j = 0
@@ -49,7 +49,7 @@ def merge_sort(data):
     while m < n:
         i = 0
         while i < n:
-            merge(i, cm.min(n, i + m), cm.min(n, i + m * 2))
+            merge(i, gh.min(n, i + m), gh.min(n, i + m * 2))
             i += m * 2
         m *= 2
         sorted.append([d for d in b0])
@@ -59,29 +59,29 @@ def merge_sort(data):
     return sorted
 
 
-@cm.setup
+@gh.setup
 def setup():
-    cm.full_screen(cm.DOUBLE)
-    cm.no_cursor()
+    gh.full_screen(gh.DOUBLE)
+    gh.no_cursor()
 
     global sorted
     data = generate_data()
     sorted = merge_sort(data)
 
 
-@cm.draw
+@gh.draw
 def draw():
     global j
-    x = (cm.get_width() - len(sorted[0])) / 2
-    y = (cm.get_height() - len(sorted)) / 2
-    cm.translate(x, y)
+    x = (gh.get_width() - len(sorted[0])) / 2
+    y = (gh.get_height() - len(sorted)) / 2
+    gh.translate(x, y)
     if j < len(sorted):
         numbers = sorted[j]
         for i, n in enumerate(numbers):
-            cm.stroke(cards[n])
-            cm.point(i, j)
+            gh.stroke(cards[n])
+            gh.point(i, j)
         j += 1
 
 
-cm.run()
+gh.run()
 ```

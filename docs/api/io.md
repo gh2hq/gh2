@@ -2,7 +2,7 @@
 
 Methods for IO.
 
-<a name="load_json" href="#load_json">#</a> cm.**load_json**(*filename*)
+<a name="load_json" href="#load_json">#</a> gh.**load_json**(*filename*)
 
 Loads data from JSON file to dict object.
 
@@ -25,10 +25,10 @@ Loads data from JSON file to dict object.
 ```
 
 ```py
-import charming as cm
+import lighght as gh
 
-o = cm.load_json('../assets/files/test_object.json')
-a = cm.load_json('../assets/files/test_array.json')
+o = gh.load_json('../assets/files/test_object.json')
+a = gh.load_json('../assets/files/test_array.json')
 
 print(o, a)
 
@@ -36,7 +36,7 @@ print(o, a)
 # [{'name': 'Peter', 'age': 10}, {'name': 'Tom', 'age': 15}]
 ```
 
-<a name="load_csv" href="#load_csv">#</a> cm.**load_csv**(*filename*)
+<a name="load_csv" href="#load_csv">#</a> gh.**load_csv**(*filename*)
 
 Loads data from CSV file to dict object.
 
@@ -47,9 +47,9 @@ Yuki, 10, '女'
 ```
 
 ```py
-import charming as cm
+import lighght as gh
 
-o = cm.load_csv('../assets/files/test.csv')
+o = gh.load_csv('../assets/files/test.csv')
 
 print(o)
 

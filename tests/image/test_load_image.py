@@ -1,22 +1,22 @@
-import charming as cm
+import lighght as gh
 
 frames = None
 
 
-@cm.setup
+@gh.setup
 def setup():
     global frames
-    cm.full_screen()
-    cm.no_cursor()
-    frames = cm.load_image('../assets/images/test.gif')
+    gh.full_screen()
+    gh.no_cursor()
+    frames = gh.load_image('../assets/images/test.gif')
 
 
-@cm.draw
+@gh.draw
 def draw():
-    cm.background(' ')
-    index = int(cm.get_frame_count() / 2) % len(frames)
+    gh.background(' ')
+    index = int(gh.get_frame_count() / 2) % len(frames)
     frame = frames[index]
-    cm.image(frame, 0, 0, 30, 15)
+    gh.image(frame, 0, 0, 30, 15)
 
 
-cm.run()
+gh.run()

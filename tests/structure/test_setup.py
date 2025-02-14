@@ -1,23 +1,23 @@
-import charming as cm
+import lighght as gh
 
 
 a = 0
 
 
-@cm.setup
+@gh.setup
 def setup():
-    cm.full_screen()
-    cm.no_cursor()
-    cm.background('O')
-    cm.fill('+', cm.YELLOW, cm.CYAN)
-    cm.no_stroke()
+    gh.full_screen()
+    gh.no_cursor()
+    gh.background('O')
+    gh.fill('+', gh.YELLOW, gh.CYAN)
+    gh.no_stroke()
 
 
-@cm.draw
+@gh.draw
 def draw():
     global a
-    cm.rect(a % cm.get_width(), 2, 2, cm.get_height() - 4)
+    gh.rect(a % gh.get_width(), 2, 2, gh.get_height() - 4)
     a += 1
 
 
-cm.run()
+gh.run()

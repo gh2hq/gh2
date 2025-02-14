@@ -1,4 +1,4 @@
-import charming as cm
+import lighght as gh
 
 # If you want to draw a ascii text, you'd
 # better use raw string: r'''xxx'''.
@@ -16,14 +16,14 @@ head = r'''
 
 face = "(^O^)/"
 
-cm.full_screen()
-cm.no_cursor()
+gh.full_screen()
+gh.no_cursor()
 
-cm.stroke(fg=cm.RED, bg=cm.YELLOW)
-cm.text(head, 0, 0)
-cm.text(face, 25, 5)
+gh.stroke(fg=gh.RED, bg=gh.YELLOW)
+gh.text(head, 0, 0)
+gh.text(face, 25, 5)
 
-cm.stroke_weight(1)
-cm.text('h', 35, 5)
+gh.stroke_weight(1)
+gh.text('h', 35, 5)
 
-cm.run()
+gh.run()

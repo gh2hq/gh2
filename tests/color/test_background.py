@@ -1,37 +1,37 @@
 # preview: https://raw.githubusercontent.com/charming-art/public-files/master/test_background.gif
 
-import charming as cm
+import lighght as gh
 
 
-@cm.setup
+@gh.setup
 def setup():
-    c = cm.CColor('*')
-    cm.full_screen()
-    cm.frame_rate(2)
-    cm.no_cursor()
-    cm.background(c)  # use CColor
+    c = gh.CColor('*')
+    gh.full_screen()
+    gh.frame_rate(2)
+    gh.no_cursor()
+    gh.background(c)  # use CColor
 
 
 x = 0
 
 
-@cm.draw
+@gh.draw
 def draw():
     global x
     x += 1
-    t = cm.get_frame_count() % 3
+    t = gh.get_frame_count() % 3
 
     if t == 0:
-        cm.background('@')  # one channel
+        gh.background('@')  # one channel
     elif t == 1:
-        cm.background('+', cm.BLUE)  # two channel
+        gh.background('+', gh.BLUE)  # two channel
     else:
-        cm.background('-', cm.RED, cm.BLUE)  # three channel
+        gh.background('-', gh.RED, gh.BLUE)  # three channel
 
 
-    cm.fill('0', cm.YELLOW, cm.RED)
-    cm.stroke('1', cm.GREEN, cm.BLUE)
-    cm.rect(0, 0, 5, 5)
+    gh.fill('0', gh.YELLOW, gh.RED)
+    gh.stroke('1', gh.GREEN, gh.BLUE)
+    gh.rect(0, 0, 5, 5)
 
 
-cm.run()
+gh.run()

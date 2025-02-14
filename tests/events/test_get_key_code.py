@@ -1,32 +1,32 @@
-import charming as cm
+import lighght as gh
 
 # CODED, ESCAPE, LEFT, UP, RIGHT, DOWN, BACKSPACE, TAB, ENTER, SPACE
 
 char = ''
 
 
-@cm.setup
+@gh.setup
 def setup():
-    cm.full_screen()
-    cm.no_cursor()
+    gh.full_screen()
+    gh.no_cursor()
 
 
-@cm.draw
+@gh.draw
 def draw():
-    cm.background(' ')
-    cm.fill(char)
-    cm.no_stroke()
-    cm.rect(0, 0, 10, 10)
+    gh.background(' ')
+    gh.fill(char)
+    gh.no_stroke()
+    gh.rect(0, 0, 10, 10)
 
 
-@cm.key_pressed
+@gh.key_pressed
 def key_pressed():
     global char
-    if cm.get_key() == cm.CODED:
-        if cm.get_key_code() == cm.UP:
+    if gh.get_key() == gh.CODED:
+        if gh.get_key_code() == gh.UP:
             char = 'O'
         else:
             char = '+'
 
 
-cm.run()
+gh.run()

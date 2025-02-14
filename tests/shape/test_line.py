@@ -1,6 +1,6 @@
-import charming as cm
+import lighght as gh
 
-cm.full_screen()
-cm.no_cursor()
-cm.line(1, 1, 10, 10)
-cm.run()
+gh.full_screen()
+gh.no_cursor()
+gh.line(1, 1, 10, 10)
+gh.run()

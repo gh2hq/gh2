@@ -1,44 +1,44 @@
-import charming as cm
+import lighght as gh
 
 
-@cm.setup
+@gh.setup
 def setup():
-    cm.full_screen(cm.DOUBLE)
-    cm.rect_mode(cm.RADIUS)
-    cm.ellipse_mode(cm.RADIUS)
-    cm.no_cursor()
-    cm.frame_rate(10)
+    gh.full_screen(gh.DOUBLE)
+    gh.rect_mode(gh.RADIUS)
+    gh.ellipse_mode(gh.RADIUS)
+    gh.no_cursor()
+    gh.frame_rate(10)
 
 
-@cm.draw
+@gh.draw
 def draw():
     size = 8
-    x = cm.get_frame_count() / 2
+    x = gh.get_frame_count() / 2
     n1 = easing(x, size)
-    n2 = easing(x + cm.PI, size)
+    n2 = easing(x + gh.PI, size)
 
-    cm.background(" ")
-    cm.no_stroke()
-    cm.translate(cm.get_width() / 2, cm.get_height() / 2)
-    cm.rotate(cm.QUARTER_PI)
+    gh.background(" ")
+    gh.no_stroke()
+    gh.translate(gh.get_width() / 2, gh.get_height() / 2)
+    gh.rotate(gh.QUARTER_PI)
 
-    cm.fill('💘')
-    cm.square(0, 0, size)
-    cm.circle(0, -n1, size)
-    cm.circle(n2, 0, size)
+    gh.fill('💘')
+    gh.square(0, 0, size)
+    gh.circle(0, -n1, size)
+    gh.circle(n2, 0, size)
 
 
 def easing(x, scale=1):
-    p = cm.TAU * 2
+    p = gh.TAU * 2
     x = x - (x // p) * p
-    if x < cm.PI:
-        return cm.cos(x) * scale
-    elif x < cm.PI * 2:
+    if x < gh.PI:
+        return gh.cos(x) * scale
+    elif x < gh.PI * 2:
         return - scale
-    elif x < cm.PI * 3:
-        return cm.cos(x + cm.PI) * scale
+    elif x < gh.PI * 3:
+        return gh.cos(x + gh.PI) * scale
     else:
         return scale
 
 if __name__ == "__main__":
-    cm.run()
+    gh.run()

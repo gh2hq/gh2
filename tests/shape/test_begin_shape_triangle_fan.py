@@ -1,21 +1,21 @@
-import charming as cm
+import lighght as gh
 
 # environment
-cm.full_screen()
-cm.no_cursor()
+gh.full_screen()
+gh.no_cursor()
 
 # styles
-cm.fill('*', cm.YELLOW, cm.RED)
-cm.stroke('@', cm.GREEN, cm.BLUE)
+gh.fill('*', gh.YELLOW, gh.RED)
+gh.stroke('@', gh.GREEN, gh.BLUE)
 
 # custom shapes
-cm.begin_shape(cm.TRIANGLE_FAN)
-cm.vertex(11, 6)
-cm.vertex(11, 1)
-cm.vertex(21, 6)
-cm.vertex(11, 11)
-cm.vertex(1, 6)
-cm.vertex(11, 1)
-cm.end_shape(close_mode=cm.CLOSE)
+gh.begin_shape(gh.TRIANGLE_FAN)
+gh.vertex(11, 6)
+gh.vertex(11, 1)
+gh.vertex(21, 6)
+gh.vertex(11, 11)
+gh.vertex(1, 6)
+gh.vertex(11, 1)
+gh.end_shape(close_mode=gh.CLOSE)
 
-cm.run()
+gh.run()
