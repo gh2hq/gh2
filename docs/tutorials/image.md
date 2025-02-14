@@ -1,13 +1,13 @@
 # Image
 
-In Charming, it is possible for you to draw an image to terminal as simple as Processing, but only a subset of raw pixels will be displayed.
+In Lighght, it is possible for you to draw an image to terminal as simple as Processing, but only a subset of raw pixels will be displayed.
 
 ## Static image
 
 ```py
-''' charming: image '''
+''' lighght: image '''
 
-import charming as app
+import lighght as app
 
 app.no_cursor()
 app.full_screen()

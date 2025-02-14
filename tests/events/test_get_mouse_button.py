@@ -1,21 +1,21 @@
-import charming as cm
+import lighght as gh
 
 
-@cm.setup
+@gh.setup
 def setup():
-    cm.full_screen()
+    gh.full_screen()
 
 
-@cm.draw
+@gh.draw
 def draw():
-    cm.no_stroke()
-    if cm.get_mouse_pressed() and cm.get_mouse_button() == cm.LEFT:
-        cm.fill('O')
-    elif (cm.get_mouse_pressed() and cm.get_mouse_button() == cm.RIGHT):
-        cm.fill('+')
+    gh.no_stroke()
+    if gh.get_mouse_pressed() and gh.get_mouse_button() == gh.LEFT:
+        gh.fill('O')
+    elif (gh.get_mouse_pressed() and gh.get_mouse_button() == gh.RIGHT):
+        gh.fill('+')
     else:
-        cm.fill('-')
-    cm.rect(0, 0, 10, 10)
+        gh.fill('-')
+    gh.rect(0, 0, 10, 10)
 
 
-cm.run()
+gh.run()

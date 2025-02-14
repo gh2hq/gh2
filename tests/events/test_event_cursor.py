@@ -1,39 +1,39 @@
-import charming as cm
+import lighght as gh
 
 
-@cm.setup
+@gh.setup
 def setup():
-    cm.full_screen()
-    cm.set_cursor(cm.get_width() / 2, cm.get_height() / 2)
+    gh.full_screen()
+    gh.set_cursor(gh.get_width() / 2, gh.get_height() / 2)
 
 
-@cm.draw
+@gh.draw
 def draw():
-    cm.background(' ')
+    gh.background(' ')
     # check if cursor is moving, otherwise draw hint message
-    if not cm.get_cursor_moved():
-        cm.translate(cm.get_width() / 2, cm.get_height() / 2)
-        cm.text_align(cm.CENTER)
-        cm.stroke(' ', cm.WHITE, cm.BLACK)
-        cm.text('Pressed up/right/down/left arrow.', 0, 0)
+    if not gh.get_cursor_moved():
+        gh.translate(gh.get_width() / 2, gh.get_height() / 2)
+        gh.text_align(gh.CENTER)
+        gh.stroke(' ', gh.WHITE, gh.BLACK)
+        gh.text('Pressed up/right/down/left arrow.', 0, 0)
 
 
 # You can use cursor_pressed hooks instead of
 # mouse_moved or mouse_dragged to do some effects.
 
-@cm.cursor_pressed
+@gh.cursor_pressed
 def cursor_pressed():
-    x = cm.get_cursor_x()
-    y = cm.get_cursor_y()
-    px = cm.get_pcursor_x()
-    py = cm.get_pcursor_y()
+    x = gh.get_cursor_x()
+    y = gh.get_cursor_y()
+    px = gh.get_pcursor_x()
+    py = gh.get_pcursor_y()
 
-    cm.stroke('@', cm.YELLOW, cm.RED)
-    cm.fill('+', cm.GREEN, cm.BLUE)
-    cm.ellipse(x, y, 10, 10)
+    gh.stroke('@', gh.YELLOW, gh.RED)
+    gh.fill('+', gh.GREEN, gh.BLUE)
+    gh.ellipse(x, y, 10, 10)
 
-    cm.stroke('+', cm.CYAN, cm.MAGENTA)
-    cm.point(px, py)
+    gh.stroke('+', gh.CYAN, gh.MAGENTA)
+    gh.point(px, py)
 
 
-cm.run()
+gh.run()

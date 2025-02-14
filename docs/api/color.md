@@ -2,186 +2,186 @@
 
 Methods for creating, reading and setting colors.
 
-<a name="ccolor" href="#ccolor">#</a> cm.**CColor**(*ch*=" "[, *fg*[, *bg*]]) : CColor
+<a name="ccolor" href="#ccolor">#</a> gh.**CColor**(*ch*=" "[, *fg*[, *bg*]]) : CColor
 
 Creates colors for storing in variables of the color data type. The `fg` or `bg` parameters are interpreted as ANSI, RGB or HSB values depending on the current `color_mode`.
 
 ```py
-import charming as cm
+import lighght as gh
 
-cm.full_screen()
-cm.no_cursor()
+gh.full_screen()
+gh.no_cursor()
 
-c0 = cm.CColor()
-c1 = cm.CColor('@')
-c2 = cm.CColor('@', cm.RED)
-c3 = cm.CColor('@', cm.RED, cm.YELLOW)
+c0 = gh.CColor()
+c1 = gh.CColor('@')
+c2 = gh.CColor('@', gh.RED)
+c3 = gh.CColor('@', gh.RED, gh.YELLOW)
 
-cm.stroke(c0)
-cm.point(0, 0) # nothing
+gh.stroke(c0)
+gh.point(0, 0) # nothing
 
-cm.stroke(c1)
-cm.point(1, 1) # ('@', cm.WHITE, cm.BLACK)
+gh.stroke(c1)
+gh.point(1, 1) # ('@', gh.WHITE, gh.BLACK)
 
-cm.stroke(c2)
-cm.point(2, 2) # ('@', cm.RED, cm.BLACK)
+gh.stroke(c2)
+gh.point(2, 2) # ('@', gh.RED, gh.BLACK)
 
-cm.stroke(c3)
-cm.point(3, 3) # ('@', cm.RED, cm.YELLOW)
+gh.stroke(c3)
+gh.point(3, 3) # ('@', gh.RED, gh.YELLOW)
 
-cm.run()
+gh.run()
 ```
 
 <img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_ccolor.png" width="100%"/>
 
-<a name="background" href="#background">#</a> cm.**background**(*ch*=" "[, *fg*[, *bg*]])<br>
-<a name="background" href="#background">#</a> cm.**background**(*ccolor*)
+<a name="background" href="#background">#</a> gh.**background**(*ch*=" "[, *fg*[, *bg*]])<br>
+<a name="background" href="#background">#</a> gh.**background**(*ccolor*)
 
 Sets the color used for the background of terminal. The `fg` or `bg` parameters are interpreted as ANSI, RGB or HSB values depending on the current `color_mode`.
 
 This function is typically used within draw() to clear the display window at the beginning of each frame, but it can be used inside setup() to set the background on the first frame of animation or if the background need only be set once.
 
 ```py
-import charming as cm
+import lighght as gh
 
 
-@cm.setup
+@gh.setup
 def setup():
-    c = cm.CColor('*')
-    cm.full_screen()
-    cm.frame_rate(2)
-    cm.no_cursor()
-    cm.background(c)  # use CColor
+    c = gh.CColor('*')
+    gh.full_screen()
+    gh.frame_rate(2)
+    gh.no_cursor()
+    gh.background(c)  # use CColor
 
 
 x = 0
 
 
-@cm.draw
+@gh.draw
 def draw():
     global x
     x += 1
-    t = cm.get_frame_count() % 3
+    t = gh.get_frame_count() % 3
 
     if t == 0:
-        cm.background('@')  # one channel
+        gh.background('@')  # one channel
     elif t == 1:
-        cm.background('+', cm.BLUE)  # two channel
+        gh.background('+', gh.BLUE)  # two channel
     else:
-        cm.background('-', cm.RED, cm.BLUE)  # three channel
+        gh.background('-', gh.RED, gh.BLUE)  # three channel
 
 
-    cm.fill('0', cm.YELLOW, cm.RED)
-    cm.stroke('1', cm.GREEN, cm.BLUE)
-    cm.rect(0, 0, 5, 5)
+    gh.fill('0', gh.YELLOW, gh.RED)
+    gh.stroke('1', gh.GREEN, gh.BLUE)
+    gh.rect(0, 0, 5, 5)
 
 
-cm.run()
+gh.run()
 ```
 
 <img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_background.gif" width="100%"/>
 
-<a name="fill" href="#fill">#</a> cm.**fill**(*ch*=" "[, *fg*[, *bg*]])<br/>
-<a name="fill" href="#fill">#</a> cm.**fill**(*ccolor*)
+<a name="fill" href="#fill">#</a> gh.**fill**(*ch*=" "[, *fg*[, *bg*]])<br/>
+<a name="fill" href="#fill">#</a> gh.**fill**(*ccolor*)
 
 Sets the color used to fill shapes. The `fg` or `bg` parameters are interpreted as ANSI, RGB or HSB values depending on the current `color_mode`.
 
 ```py
-import charming as cm
+import lighght as gh
 
-cm.full_screen()
-cm.no_cursor()
+gh.full_screen()
+gh.no_cursor()
 
-cm.fill('@', cm.RED, cm.BLUE)
-cm.rect(0, 0, 10, 5)
+gh.fill('@', gh.RED, gh.BLUE)
+gh.rect(0, 0, 10, 5)
 
-cm.fill('O', cm.YELLOW, cm.CYAN)
-cm.rect(20, 0, 10, 5)
+gh.fill('O', gh.YELLOW, gh.CYAN)
+gh.rect(20, 0, 10, 5)
 
-cm.run()
+gh.run()
 ```
 
 <img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_fill.png" width="100%"/>
 
-<a name="no_fill" href="#no_fill">#</a> cm.**no_fill**()
+<a name="no_fill" href="#no_fill">#</a> gh.**no_fill**()
 
 Disables filling shapes. If both `no_stroke()` and `no_fill()` are called, nothing will be drawn to the screen.
 
 ```py
-import charming as cm
+import lighght as gh
 
-cm.full_screen()
-cm.no_cursor()
+gh.full_screen()
+gh.no_cursor()
 
-cm.fill('@', cm.RED, cm.BLUE)
-cm.rect(0, 0, 10, 5)
+gh.fill('@', gh.RED, gh.BLUE)
+gh.rect(0, 0, 10, 5)
 
-cm.no_fill()
-cm.rect(20, 0, 10, 5)
+gh.no_fill()
+gh.rect(20, 0, 10, 5)
 
-cm.run()
+gh.run()
 ```
 
 <img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_no_fill.png" width="100%"/>
 
-<a name="no_stroke" href="#no_stroke">#</a> cm.**no_stroke**()
+<a name="no_stroke" href="#no_stroke">#</a> gh.**no_stroke**()
 
 Disables drawing the stroke (outline). If both `no_stroke()` and `no_fill()` are called, nothing will be drawn to the screen.
 
 ```py
-import charming as cm
+import lighght as gh
 
-cm.full_screen()
-cm.no_cursor()
+gh.full_screen()
+gh.no_cursor()
 
-cm.fill('@', cm.RED, cm.BLUE)
-cm.rect(0, 0, 10, 5)
+gh.fill('@', gh.RED, gh.BLUE)
+gh.rect(0, 0, 10, 5)
 
-cm.no_stroke()
-cm.rect(20, 0, 10, 5)
+gh.no_stroke()
+gh.rect(20, 0, 10, 5)
 
-cm.run()
+gh.run()
 ```
 
 <img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_no_stroke.png" width="100%"/>
 
-<a name="stroke" href="#stroke">#</a> cm.**stroke**(*ch*="*"[, *fg*[, *bg*]])<br/>
-<a name="stroke" href="#stroke">#</a> cm.**stroke**(*ccolor*)
+<a name="stroke" href="#stroke">#</a> gh.**stroke**(*ch*="*"[, *fg*[, *bg*]])<br/>
+<a name="stroke" href="#stroke">#</a> gh.**stroke**(*ccolor*)
 
 Sets the color used to draw lines and borders around shapes. The `fg` or `bg` parameters are interpreted as ANSI, RGB or HSB values depending on the current `color_mode`.
 
 ```py
-import charming as cm
+import lighght as gh
 
-cm.full_screen()
-cm.no_cursor()
+gh.full_screen()
+gh.no_cursor()
 
-cm.stroke('@', cm.RED, cm.BLUE)
-cm.rect(0, 0, 10, 5)
+gh.stroke('@', gh.RED, gh.BLUE)
+gh.rect(0, 0, 10, 5)
 
-cm.stroke('O', cm.YELLOW, cm.CYAN)
-cm.rect(20, 0, 10, 5)
+gh.stroke('O', gh.YELLOW, gh.CYAN)
+gh.rect(20, 0, 10, 5)
 
-cm.run()
+gh.run()
 ```
 
-<a name="color_mode" href="#color_mode">#</a> cm.**color_mode**(*mode*=ANSI | RGB | HSB[, *max1*[, *max2*, [, *max3*]]])
+<a name="color_mode" href="#color_mode">#</a> gh.**color_mode**(*mode*=ANSI | RGB | HSB[, *max1*[, *max2*, [, *max3*]]])
 
-color_mode() changes the way Charming interprets color data. By default, the parameters for fill(), stroke(), background(), and color() are defined by values between 0 and 255 using ANSI color.
+color_mode() changes the way Lighght interprets color data. By default, the parameters for fill(), stroke(), background(), and color() are defined by values between 0 and 255 using ANSI color.
 
 ```py
-import charming as cm
+import lighght as gh
 
-cm.full_screen()
-cm.no_cursor()
+gh.full_screen()
+gh.no_cursor()
 
 for i in range(256):
     x = i % 32
     y = i // 32
-    cm.stroke(' ', i, i)
-    cm.point(x, y)
+    gh.stroke(' ', i, i)
+    gh.point(x, y)
 
-cm.run()
+gh.run()
 ```
 
 <img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_color_mode_ansi_256.png" width="100%"/>
@@ -189,31 +189,31 @@ cm.run()
 To make it easier to use ANSI color, there are some predefined constants which can be used directly as below.
 
 ```py
-import charming as cm
+import lighght as gh
 
-cm.full_screen()
-cm.no_cursor()
+gh.full_screen()
+gh.no_cursor()
 
 # basic colors
 colors = [
-    cm.RED,
-    cm.BLACK,
-    cm.CYAN,
-    cm.YELLOW,
-    cm.GREEN,
-    cm.BLUE,
-    cm.WHITE,
-    cm.MAGENTA
+    gh.RED,
+    gh.BLACK,
+    gh.CYAN,
+    gh.YELLOW,
+    gh.GREEN,
+    gh.BLUE,
+    gh.WHITE,
+    gh.MAGENTA
 ]
 
-cm.stroke_weight(1)
+gh.stroke_weight(1)
 for i, c in enumerate(colors):
     x = 5
     y = 2
-    cm.stroke("@", c, c)
-    cm.point(i * 5 + x , y)
+    gh.stroke("@", c, c)
+    gh.point(i * 5 + x , y)
 
-cm.run()
+gh.run()
 ```
 
 <img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_color_mode_ansi_baisc.png" width="100%"/>
@@ -221,11 +221,11 @@ cm.run()
 Setting `color_mode(HSB)` lets you use the HSB system instead. In this situation, each color is represented by three-elements tuple `(hue, saturation, brightness)`. The hue channel is between 0 and 255, and the saturation or brightness channel is between 0 and 100. It is useful to draw a rainbow.
 
 ```py
-import charming as cm
+import lighght as gh
 
-cm.full_screen()
-cm.color_mode(cm.HSB)
-cm.no_cursor()
+gh.full_screen()
+gh.color_mode(gh.HSB)
+gh.no_cursor()
 
 
 # rainbows
@@ -235,10 +235,10 @@ h = 360 / w
 for hue in range(360):
     i = hue % w
     j = hue // w
-    cm.stroke(" ", (hue, 100, 100), (hue, 100, 100))
-    cm.point(i, j)
+    gh.stroke(" ", (hue, 100, 100), (hue, 100, 100))
+    gh.point(i, j)
 
-cm.run()
+gh.run()
 ```
 
 <img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_color_mode_hsb.png" width="100%"/>
@@ -246,21 +246,21 @@ cm.run()
 Setting `color_mode(RGB)` lets you use the HSB system instead. In this situation, each color is represented by three-elements tuple `(red, green, blue)`. The red, green, blue channels are all between 0 and 255. `(c,)` is short for `(c, c, c)`. It can be used to draw color with only one channel.
 
 ```py
-import charming as cm
+import lighght as gh
 
-cm.full_screen()
-cm.no_cursor()
-cm.color_mode(cm.RGB)
+gh.full_screen()
+gh.no_cursor()
+gh.color_mode(gh.RGB)
 
 n = 7
-cm.stroke_weight(1)
+gh.stroke_weight(1)
 
 for i in range(n):
-    c = cm.map(i, 0, n, 0, 255)
-    cm.stroke(" ", (c, 0, 0), (c, 0, 0))
-    cm.point(i * 5 + 5, 2)
+    c = gh.map(i, 0, n, 0, 255)
+    gh.stroke(" ", (c, 0, 0), (c, 0, 0))
+    gh.point(i * 5 + 5, 2)
 
-cm.run()
+gh.run()
 ```
 
 <img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_color_mode_rgb_red.png" width="100%"/>
@@ -268,49 +268,49 @@ cm.run()
 It also can be used to draw gray colors.
 
 ```py
-import charming as cm
+import lighght as gh
 
-cm.full_screen()
-cm.color_mode(cm.RGB)
-cm.no_cursor()
+gh.full_screen()
+gh.color_mode(gh.RGB)
+gh.no_cursor()
 
 n = 7
-cm.stroke_weight(1)
+gh.stroke_weight(1)
 
 for i in range(n):
-    c = cm.map(i, 0, n, 0, 255)
-    cm.stroke("@", (c,), (c,))
-    cm.point(i * 5 + 5, 2)
+    c = gh.map(i, 0, n, 0, 255)
+    gh.stroke("@", (c,), (c,))
+    gh.point(i * 5 + 5, 2)
 
-cm.run()
+gh.run()
 ```
 
 <img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_color_mode_rgb_gray.png" width="100%"/>
 
-<a name="lerp_color" href="#lerp_color">#</a> cm.**lerp_color**(*start*, *stop*, *amt*)
+<a name="lerp_color" href="#lerp_color">#</a> gh.**lerp_color**(*start*, *stop*, *amt*)
 
 Blends two colors to find a third color somewhere between them. The amt parameter is the amount to interpolate between the two values where 0.0 equal to the first color, 0.1 is very near the first color, 0.5 is halfway in between, etc.
 
 Noticed that not only does it interpolate color `bg` and `fg`, it also will interpolates `ch` as well.
 
 ```py
-import charming as cm
+import lighght as gh
 
-cm.full_screen()
-cm.no_cursor()
+gh.full_screen()
+gh.no_cursor()
 
-start = cm.CColor('a', cm.BLUE, cm.RED)  # start color
-end = cm.CColor('z', cm.GREEN, cm.YELLOW)  # end color
+start = gh.CColor('a', gh.BLUE, gh.RED)  # start color
+end = gh.CColor('z', gh.GREEN, gh.YELLOW)  # end color
 
-cm.stroke_weight(1)
+gh.stroke_weight(1)
 n = 10
 for i in range(n):
     t = i / n
-    c = cm.lerp_color(start, end, t)
-    cm.stroke(c)
-    cm.point(i * 5 + 5, 2)
+    c = gh.lerp_color(start, end, t)
+    gh.stroke(c)
+    gh.point(i * 5 + 5, 2)
 
-cm.run()
+gh.run()
 ```
 
 <img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_lerp_color_ansi.png" width="100%"/>
@@ -318,24 +318,24 @@ cm.run()
 It also can be used to interpolate color in RGB and HSB color mode.
 
 ```py
-import charming as cm
+import lighght as gh
 
-cm.full_screen()
-cm.no_cursor()
-cm.color_mode(cm.RGB)
+gh.full_screen()
+gh.no_cursor()
+gh.color_mode(gh.RGB)
 
-start = cm.CColor('a', (0,), (255, 0, 0))
-end = cm.CColor('z', (255, 255, 0), (0,))
+start = gh.CColor('a', (0,), (255, 0, 0))
+end = gh.CColor('z', (255, 255, 0), (0,))
 n = 10
 
 for i in range(n):
     t = i / n
-    c = cm.lerp_color(start, end, t)
-    cm.stroke_weight(1)
-    cm.stroke(c)
-    cm.point(i * 5 + 5, 2)
+    c = gh.lerp_color(start, end, t)
+    gh.stroke_weight(1)
+    gh.stroke(c)
+    gh.point(i * 5 + 5, 2)
 
-cm.run()
+gh.run()
 ```
 
 <img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_lerp_color_rgb.png" width="100%"/>

@@ -1,23 +1,23 @@
-import charming as cm
+import lighght as gh
 
 
 xoff = 0.0
 
 
-@cm.setup
+@gh.setup
 def setup():
-    cm.full_screen()
-    cm.no_cursor()
-    cm.noise_seed(99)
+    gh.full_screen()
+    gh.no_cursor()
+    gh.noise_seed(99)
 
 
-@cm.draw
+@gh.draw
 def draw():
-    cm.background(' ')
+    gh.background(' ')
     global xoff
     xoff += .01
-    n = cm.noise(xoff) * cm.get_width()
-    cm.line(n, 0, n, cm.get_height())
+    n = gh.noise(xoff) * gh.get_width()
+    gh.line(n, 0, n, gh.get_height())
 
 
-cm.run()
+gh.run()

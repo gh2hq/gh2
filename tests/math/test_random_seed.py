@@ -1,13 +1,13 @@
-import charming as cm
+import lighght as gh
 
-cm.full_screen()
-cm.no_cursor()
-cm.color_mode(cm.RGB)
+gh.full_screen()
+gh.no_cursor()
+gh.color_mode(gh.RGB)
 
-cm.random_seed(99)
-for i in range(cm.get_width()):
-    r = cm.random(0, 255)
-    cm.stroke(' ', (r,), (r, ))
-    cm.line(i, 0, i, cm.get_height())
+gh.random_seed(99)
+for i in range(gh.get_width()):
+    r = gh.random(0, 255)
+    gh.stroke(' ', (r,), (r, ))
+    gh.line(i, 0, i, gh.get_height())
 
-cm.run()
+gh.run()

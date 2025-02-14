@@ -1,9 +1,9 @@
-import charming as cm
+import lighght as gh
 
-cm.full_screen()
-cm.no_cursor()
+gh.full_screen()
+gh.no_cursor()
 
-img = cm.load_image('../assets/images/test.png')
+img = gh.load_image('../assets/images/test.png')
 img.load_pixels()
 for i in range(int(img.width / 2)):
     for j in range(img.height):
@@ -12,5 +12,5 @@ for i in range(int(img.width / 2)):
         img.set(ri, j, color)
 img.update_pixels()
 
-cm.image(img, 0, 0, 30, 15)
-cm.run()
+gh.image(img, 0, 0, 30, 15)
+gh.run()

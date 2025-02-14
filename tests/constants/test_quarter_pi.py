@@ -1,12 +1,12 @@
-import charming as cm
+import lighght as gh
 
-cm.full_screen()
-cm.no_cursor()
+gh.full_screen()
+gh.no_cursor()
 
-x = cm.get_width() / 2
-y = cm.get_height() / 2
-r = cm.get_height() * 0.8
+x = gh.get_width() / 2
+y = gh.get_height() / 2
+r = gh.get_height() * 0.8
 
-cm.arc(x, y, r * 2, r, 0, cm.QUARTER_PI, cm.PIE)
+gh.arc(x, y, r * 2, r, 0, gh.QUARTER_PI, gh.PIE)
 
-cm.run()
+gh.run()

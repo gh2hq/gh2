@@ -1,6 +1,6 @@
-import charming as cm
+import lighght as gh
 
-font_list = cm.get_font_list()
+font_list = gh.get_font_list()
 
 print(font_list)
 print(len(font_list))

@@ -1,26 +1,26 @@
-import charming as cm
+import lighght as gh
 
 x = 0
 
 
-@cm.setup
+@gh.setup
 def setup():
-    cm.full_screen()
-    cm.no_cursor()
-    cm.no_loop()
+    gh.full_screen()
+    gh.no_cursor()
+    gh.no_loop()
 
 
-@cm.draw
+@gh.draw
 def draw():
     global x
-    cm.background(' ')
-    cm.line(x, 0, x, cm.get_height())
-    x = (x + 1) % cm.get_width()
+    gh.background(' ')
+    gh.line(x, 0, x, gh.get_height())
+    x = (x + 1) % gh.get_width()
 
 
-@cm.mouse_clicked
+@gh.mouse_clicked
 def mouse_clicked():
-    cm.redraw()
+    gh.redraw()
 
 
-cm.run()
+gh.run()

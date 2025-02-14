@@ -7,7 +7,7 @@ This is the art visualization for Prim algorithm, inspired by [Mike Bostock](htt
 ![bfs](https://raw.githubusercontent.com/charming-art/public-files/master/example_prim.png)
 
 ```py
-import charming as cm
+import lighght as gh
 from random import shuffle
 
 vertices = None
@@ -30,7 +30,7 @@ def generate_graph(width, height):
         ]
         shuffle(around)
         edges = filter(lambda x: x >= 0 and x < size, around)
-        edges = map(lambda x: (x, cm.random(0, 1)), edges)
+        edges = map(lambda x: (x, gh.random(0, 1)), edges)
         vertex = (i, list(edges))
         graph.append(vertex)
     return graph
@@ -72,22 +72,22 @@ def swap(list, i, j):
     list[j] = t
 
 
-@cm.setup
+@gh.setup
 def setup():
     # init environment
-    cm.full_screen()
-    cm.no_cursor()
-    cm.color_mode(cm.HSB)
+    gh.full_screen()
+    gh.no_cursor()
+    gh.color_mode(gh.HSB)
 
     # init vars
     global vertices, max_depth, width, height
-    width, height = cm.get_width(), cm.get_height()
+    width, height = gh.get_width(), gh.get_height()
     graph = generate_graph(width, height)
-    vertices = prim(graph, int(cm.random(width * height)))
-    max_depth = cm.max(map(lambda x: x[1], vertices))
+    vertices = prim(graph, int(gh.random(width * height)))
+    max_depth = gh.max(map(lambda x: x[1], vertices))
 
 
-@cm.draw
+@gh.draw
 def draw():
     global i
     cnt = 10
@@ -99,12 +99,12 @@ def draw():
 
 def fill(vertex):
     index, depth = vertex
-    hue = cm.map(depth, 0, max_depth, 0, 360)
+    hue = gh.map(depth, 0, max_depth, 0, 360)
     c = (int(hue), 100, 100)
     x, y = index % width, int(index / width)
-    cm.stroke(" ", c, c)
-    cm.point(x, y)
+    gh.stroke(" ", c, c)
+    gh.point(x, y)
 
 
-cm.run()
+gh.run()
 ```

@@ -1,6 +1,6 @@
 # Color
 
-The biggest difference between Charming or Processing is the definition of color, which make Charming so unique to some extend.
+The biggest difference between Lighght or Processing is the definition of color, which make Lighght so unique to some extend.
 
 In Processing, a color normally has three or four channels: `(r, g, b)` or `(r,g, b, a)` in RGB color mode and `(h, s, b)` or `(h, s, b, a)` in HSB mode, each channel is represented by a number.
 
@@ -17,7 +17,7 @@ rect(0, 0, 100, 100);
 
 ## Ansi mode
 
-Colors are very different in Charming. In Charming, a color consists of three channels: `(ch, fg, bg)`.
+Colors are very different in Lighght. In Lighght, a color consists of three channels: `(ch, fg, bg)`.
 
 - `ch`: character, ascii code or unicode (including cjk characters or emoji).
 - `fg`: foreground color, a number(0 ~ 255 by default) if the color mode is ANSI, a tuple with length equaling to 1or 3 if the color mode is HSB or RGB.
@@ -26,7 +26,7 @@ Colors are very different in Charming. In Charming, a color consists of three ch
 ```py
 ''' charming color: ANSI '''
 
-import charming as app
+import lighght as app
 
 app.full_screen()
 app.no_cursor()
@@ -43,12 +43,12 @@ app.run()
 
 As a result of the terminal limitation, there are only 256 ANSI colors available for terminal which are represent by 0 ~ 255. Also, you can use `RED, BLACK, CYAN, YELLOW, GREEN, BLUE, WHITE, MAGENTA` directly.
 
-But in Charming, you can still use a tuple to represent the `fg` and `bg` of a color if you change the color mode to RGB or HSB, and they are convert to the closet color among the ANSI colors.
+But in Lighght, you can still use a tuple to represent the `fg` and `bg` of a color if you change the color mode to RGB or HSB, and they are convert to the closet color among the ANSI colors.
 
 ```py
 ''' charming color: RBG '''
 
-import charming as app
+import lighght as app
 
 # Set color mode to RGB
 app.color_mode(app.RGB)
@@ -81,7 +81,7 @@ app.run()
 ```py
 ''' charming color: HSB '''
 
-import charming as app
+import lighght as app
 
 # Set color mode to HSB
 app.color_mode(app.HSB)
@@ -108,11 +108,11 @@ You may already found something not work as expected.
 
 The first one is that each cell of the terminal are not square which means that its width doesn't equal to its height. And the second one is that normally ascii codes need one cell to display and unicodes need two cell to display.
 
-In order to solve both of them, you can change the renderer of Charming to `DOUBLE` mode when you call `size()` or `full_screen()`. In that mode, Charming will use two cells to display both of ascii codes and unicodes.
+In order to solve both of them, you can change the renderer of Lighght to `DOUBLE` mode when you call `size()` or `full_screen()`. In that mode, Lighght will use two cells to display both of ascii codes and unicodes.
 
 ```py
-''' charming: double mode'''
-import charming as app
+''' lighght: double mode'''
+import lighght as app
 
 app.full_screen(app.DOUBLE)
 
@@ -128,11 +128,11 @@ app.run()
 ![double mode](https://raw.githubusercontent.com/charming-art/public-files/master/double_mode.png)
 
 :::important
-**Charming can't always get the right width of unicodes, so if you find something wrong when using unicodes, you can declare the width of that unicode directly.**
+**Lighght can't always get the right width of unicodes, so if you find something wrong when using unicodes, you can declare the width of that unicode directly.**
 :::
 
 ```py
-''' charming: double mode'''
+''' lighght: double mode'''
 
 app.full_screen(app.DOUBLE)
 

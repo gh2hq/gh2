@@ -1,15 +1,15 @@
-import charming as cm
+import lighght as gh
 
-cm.full_screen()
-cm.no_cursor()
-cm.color_mode(cm.RGB)
+gh.full_screen()
+gh.no_cursor()
+gh.color_mode(gh.RGB)
 
 n = 7
-cm.stroke_weight(1)
+gh.stroke_weight(1)
 
 for i in range(n):
-    c = cm.map(i, 0, n, 0, 255)
-    cm.stroke(" ", (c, 0, 0), (c, 0, 0))
-    cm.point(i * 5 + 5, 2)
+    c = gh.map(i, 0, n, 0, 255)
+    gh.stroke(" ", (c, 0, 0), (c, 0, 0))
+    gh.point(i * 5 + 5, 2)
 
-cm.run()
+gh.run()

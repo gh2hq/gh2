@@ -1,16 +1,16 @@
-import charming as cm
+import lighght as gh
 
 text = 'charming'
 
-cm.full_screen()
-cm.no_cursor()
+gh.full_screen()
+gh.no_cursor()
 
-cm.text(text, 0, 0)
+gh.text(text, 0, 0)
 
-cm.text_size(cm.BIG)
-cm.text(text, 0, 2)
+gh.text_size(gh.BIG)
+gh.text(text, 0, 2)
 
-cm.text_size(cm.LARGE)
-cm.text(text, 0, 8)
+gh.text_size(gh.LARGE)
+gh.text(text, 0, 8)
 
-cm.run()
+gh.run()

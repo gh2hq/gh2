@@ -1,26 +1,26 @@
-import charming as cm
+import lighght as gh
 
 text = 'ch'
 
-cm.full_screen()
-cm.no_cursor()
-cm.translate(cm.get_width() / 2, cm.get_height() / 2)
+gh.full_screen()
+gh.no_cursor()
+gh.translate(gh.get_width() / 2, gh.get_height() / 2)
 
-cm.stroke('-')
-cm.line(-cm.get_width() / 2, 0, cm.get_width() / 2, 0)
-cm.text_size(cm.BIG)
+gh.stroke('-')
+gh.line(-gh.get_width() / 2, 0, gh.get_width() / 2, 0)
+gh.text_size(gh.BIG)
 
 # top
-cm.text_align(cm.CENTER, align_y=cm.TOP)
-cm.text(text, -20, 0)
+gh.text_align(gh.CENTER, align_y=gh.TOP)
+gh.text(text, -20, 0)
 
 # middle
-cm.text_align(align_y=cm.MIDDLE)
-cm.text(text, 0, 0)
+gh.text_align(align_y=gh.MIDDLE)
+gh.text(text, 0, 0)
 
 # bottom
-cm.text_align(align_y=cm.BOTTOM)
-cm.text(text, 20, 0)
+gh.text_align(align_y=gh.BOTTOM)
+gh.text(text, 20, 0)
 
 
-cm.run()
+gh.run()

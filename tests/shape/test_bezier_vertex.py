@@ -1,17 +1,17 @@
-import charming as cm
+import lighght as gh
 
 # environment
-cm.full_screen()
-cm.no_cursor()
+gh.full_screen()
+gh.no_cursor()
 
 # styles
-cm.fill('*', cm.YELLOW, cm.RED)
-cm.stroke('@', cm.GREEN, cm.BLUE)
+gh.fill('*', gh.YELLOW, gh.RED)
+gh.stroke('@', gh.GREEN, gh.BLUE)
 
 # custom curve
-with cm.open_shape():
-    cm.vertex(30, 5)
-    cm.bezier_vertex(80, 0, 80, 35, 30, 35)
-    cm.bezier_vertex(50, 30, 60, 25, 30, 5)
+with gh.open_shape():
+    gh.vertex(30, 5)
+    gh.bezier_vertex(80, 0, 80, 35, 30, 35)
+    gh.bezier_vertex(50, 30, 60, 25, 30, 5)
 
-cm.run()
+gh.run()

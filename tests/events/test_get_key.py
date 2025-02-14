@@ -1,23 +1,23 @@
-import charming as cm
+import lighght as gh
 
 
-@cm.setup
+@gh.setup
 def setup():
-    cm.full_screen()
-    cm.no_cursor()
+    gh.full_screen()
+    gh.no_cursor()
 
 
-@cm.draw
+@gh.draw
 def draw():
-    cm.background(' ')
-    if cm.get_key_pressed():
-        key = cm.get_key()
+    gh.background(' ')
+    if gh.get_key_pressed():
+        key = gh.get_key()
         if key == 'b' or key == 'B':
-            cm.fill('O')
+            gh.fill('O')
         else:
-            cm.fill('+')
-    cm.no_stroke()
-    cm.rect(0, 0, 10, 10)
+            gh.fill('+')
+    gh.no_stroke()
+    gh.rect(0, 0, 10, 10)
 
 
-cm.run()
+gh.run()

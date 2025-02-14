@@ -19,7 +19,7 @@ There are many reasons for creating Lighght, but the most important one is that 
 - [Tutorials](./docs/tutorials/readme.md)
 - [API Reference](./docs/api/readme.md)
 - [Examples](./docs/examples/readme.md)
-- [Processing&P5.js to Lighght](./docs/processing&p5js-to-charming.md)
+- [Processing&P5.js to Lighght](./docs/processing&p5js-to-lighght.md)
 
 ## ✨ Features
 
@@ -27,7 +27,7 @@ There are many reasons for creating Lighght, but the most important one is that 
 - **Powerful and Flexible**: Lighght is not as same as [urwid](https://github.com/urwid/urwid) or [click](https://github.com/pallets/click) to build console line interface. Actually it more like [asciimatics](https://github.com/peterbrittain/asciimatics), [art](https://github.com/sepandhaghighi/art) or [tcharts](https://github.com/ProtoTeam/tcharts.js) to draw some visual effects in the terminal but with more flexibility. Instead of drawing limited and predefined shapes or effects, you can draw some basic primitives, custom shapes, curves, images, typography with transforms (translate, rotate, shear) and even events (mouse, keyboard) in Lighght.
 - **Easy to Learn and Use**: Lighght is very beginner-friendly, because of Python's simple syntax and [Processing](https://processing.org/)'s concise APIs. It will be more easier if you are already familiar with them. Once you've master Lighght, you can create anything interesting in you head with it and enjoy the pure joy of coding.
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/hello_world.gif" alt="Charming" width="100%">
+<img src="https://raw.githubusercontent.com/charming-art/public-files/master/hello_world.gif" alt="Lighght" width="100%">
 
 ## 📦 Installation
 

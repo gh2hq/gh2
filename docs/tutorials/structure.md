@@ -1,10 +1,10 @@
 # Structure
 
-Like there are static mode for static effects and active mode for dynamic effects in Processing, you can also use them in Charming but with a little difference.
+Like there are static mode for static effects and active mode for dynamic effects in Processing, you can also use them in Lighght but with a little difference.
 
 ## Static mode
 
-In Processing, you needn't import APIs or call an extra method to run the sketch, but you need import APIs at first and call an extra method `run` to run the sketch in Charming.
+In Processing, you needn't import APIs or call an extra method to run the sketch, but you need import APIs at first and call an extra method `run` to run the sketch in Lighght.
 
 ### Processing
 
@@ -17,13 +17,13 @@ rect(0, 0, 100, 150);
 
 ![processnig structure](https://raw.githubusercontent.com/charming-art/public-files/master/processing_structure_static.png)
 
-### Charming
+### Lighght
 
 ```python
 ''' charming code: static mode '''
 
 # import APIs
-import charming as app
+import lighght as app
 
 app.full_screen()
 app.rect(0, 0, 10, 10)
@@ -36,7 +36,7 @@ app.run()
 
 ## Active mode
 
-Processing will automatically run the `setup` and `draw` functions you defined, but Charming will run them only they have been registered by specific decorators.
+Processing will automatically run the `setup` and `draw` functions you defined, but Lighght will run them only they have been registered by specific decorators.
 
 ### Processing
 
@@ -58,12 +58,12 @@ void draw() {
 
 ![processnig active structure](https://raw.githubusercontent.com/charming-art/public-files/master/processing_structure_active.gif)
 
-### Charming
+### Lighght
 
 ```py
 ''' charming code: active mode '''
 
-import charming as app
+import lighght as app
 
 @app.setup
 def setup():

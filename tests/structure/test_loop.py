@@ -1,28 +1,28 @@
-import charming as cm
+import lighght as gh
 
 y = 0
 
-@cm.setup
+@gh.setup
 def setup():
-    cm.full_screen()
-    cm.no_cursor()
-    cm.frame_rate(10)
+    gh.full_screen()
+    gh.no_cursor()
+    gh.frame_rate(10)
 
 
-@cm.draw
+@gh.draw
 def draw():
     global y
-    cm.background(' ')
-    cm.line(0, y, cm.get_width(), y)
-    y = (y + 1) % cm.get_height()
+    gh.background(' ')
+    gh.line(0, y, gh.get_width(), y)
+    y = (y + 1) % gh.get_height()
 
 
-@cm.mouse_clicked
+@gh.mouse_clicked
 def mouse_clicked():
-    if cm.get_is_looping():
-        cm.no_loop()
+    if gh.get_is_looping():
+        gh.no_loop()
     else:
-        cm.loop()
+        gh.loop()
 
 
-cm.run()
+gh.run()

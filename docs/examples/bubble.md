@@ -8,7 +8,7 @@ This is visualization for bubble sort which shows the progress of sorting tradit
 
 ```py
 from random import shuffle
-import charming as cm
+import lighght as gh
 
 sorted = None
 j = 0
@@ -45,29 +45,29 @@ def bubble_sort(data):
     return sorted
 
 
-@cm.setup
+@gh.setup
 def setup():
-    cm.full_screen(cm.DOUBLE)
-    cm.no_cursor()
+    gh.full_screen(gh.DOUBLE)
+    gh.no_cursor()
 
     global sorted
     data = generate_data()
     sorted = bubble_sort(data)
 
 
-@cm.draw
+@gh.draw
 def draw():
     global j
-    x = (cm.get_width() - len(sorted[0])) / 2
-    y = (cm.get_height() - len(sorted)) / 2
-    cm.translate(x, y)
+    x = (gh.get_width() - len(sorted[0])) / 2
+    y = (gh.get_height() - len(sorted)) / 2
+    gh.translate(x, y)
     if j < len(sorted):
         numbers = sorted[j]
         for i, n in enumerate(numbers):
-            cm.stroke(cards[n])
-            cm.point(i, j)
+            gh.stroke(cards[n])
+            gh.point(i, j)
         j += 1
 
 
-cm.run()
+gh.run()
 ```

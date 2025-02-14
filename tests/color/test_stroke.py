@@ -1,12 +1,12 @@
-import charming as cm
+import lighght as gh
 
-cm.full_screen()
-cm.no_cursor()
+gh.full_screen()
+gh.no_cursor()
 
-cm.stroke('@', cm.RED, cm.BLUE)
-cm.rect(0, 0, 10, 5)
+gh.stroke('@', gh.RED, gh.BLUE)
+gh.rect(0, 0, 10, 5)
 
-cm.stroke('O', cm.YELLOW, cm.CYAN)
-cm.rect(20, 0, 10, 5)
+gh.stroke('O', gh.YELLOW, gh.CYAN)
+gh.rect(20, 0, 10, 5)
 
-cm.run()
+gh.run()

@@ -1,19 +1,19 @@
-import charming as cm
+import lighght as gh
 
 
-@cm.setup
+@gh.setup
 def setup():
-    cm.full_screen()
-    cm.no_cursor()
-    cm.frame_rate(1)
+    gh.full_screen()
+    gh.no_cursor()
+    gh.frame_rate(1)
 
 
-@cm.draw
+@gh.draw
 def draw():
-    cm.background(' ')
-    cm.text_size(cm.BIG)
-    cm.text_align(cm.CENTER, cm.MIDDLE)
-    cm.text(cm.get_frame_count(), cm.get_width() / 2, cm.get_height() / 2)
+    gh.background(' ')
+    gh.text_size(gh.BIG)
+    gh.text_align(gh.CENTER, gh.MIDDLE)
+    gh.text(gh.get_frame_count(), gh.get_width() / 2, gh.get_height() / 2)
 
 
-cm.run()
+gh.run()

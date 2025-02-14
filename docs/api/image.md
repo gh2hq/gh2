@@ -4,27 +4,27 @@ Methods for drawing image to screen.
 
 ## CImage
 
-Date type for Charming to store and manipulate image.
+Date type for Lighght to store and manipulate image.
 
-<a name="cimage" href="#cimage">#</a> cm.**CImage**(*data*, *width*, *height*) : CImage
+<a name="cimage" href="#cimage">#</a> gh.**CImage**(*data*, *width*, *height*) : CImage
 
 Creates a new CImage (the datatype for storing images). This provides a fresh buffer of pixels to play with. Set the size of the buffer with the width and height parameters.
 
 ```py
-import charming as cm
+import lighght as gh
 
-cm.full_screen()
-cm.no_cursor()
+gh.full_screen()
+gh.no_cursor()
 
-img = cm.CImage(100, 100)
+img = gh.CImage(100, 100)
 img.load_pixels()
 for i in range(img.width):
     for j in range(img.height):
         img.set(i, j, (255, 0, 0, 1))
 img.update_pixels()
-cm.image(img, 0, 0, 10, 5)
+gh.image(img, 0, 0, 10, 5)
 
-cm.run()
+gh.run()
 ```
 
 <img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_cimage.png" />
@@ -46,12 +46,12 @@ Set the color of a single pixel.
 Get the color of a single pixel.
 
 ```py
-import charming as cm
+import lighght as gh
 
-cm.full_screen()
-cm.no_cursor()
+gh.full_screen()
+gh.no_cursor()
 
-img = cm.load_image('../assets/images/test.png')
+img = gh.load_image('../assets/images/test.png')
 img.load_pixels()
 for i in range(int(img.width / 2)):
     for j in range(img.height):
@@ -60,8 +60,8 @@ for i in range(int(img.width / 2)):
         img.set(ri, j, color)
 img.update_pixels()
 
-cm.image(img, 0, 0, 30, 15)
-cm.run()
+gh.image(img, 0, 0, 30, 15)
+gh.run()
 ```
 
 <img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_cimage_method.png" />
@@ -70,40 +70,40 @@ cm.run()
 
 Methods for display images.
 
-<a name="image" href="#image">#</a> cm.**image**(*image*, *a*, *b*, *c*, *d*)
+<a name="image" href="#image">#</a> gh.**image**(*image*, *a*, *b*, *c*, *d*)
 
 Draw an image to the p5.js canvas which will be affected by **cm**.*rect_mode*.
 
 ```py
-import charming as cm
+import lighght as gh
 
-cm.full_screen()
-cm.no_cursor()
+gh.full_screen()
+gh.no_cursor()
 
-img = cm.load_image('../assets/images/test.png')
-cm.image(img, 0, 0, 30, 15)
+img = gh.load_image('../assets/images/test.png')
+gh.image(img, 0, 0, 30, 15)
 
-cm.run()
+gh.run()
 ```
 
 <img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_image.png" />
 
-<a name="load_image" href="#load_image">#</a> cm.**load_image**(*src*) : CImage
+<a name="load_image" href="#load_image">#</a> gh.**load_image**(*src*) : CImage
 
 Loads an image from a path and creates a CImage or CImage array from it.
 
 If it loads a static image such as png format, it will returns a CImage.
 
 ```py
-import charming as cm
+import lighght as gh
 
-cm.full_screen()
-cm.no_cursor()
+gh.full_screen()
+gh.no_cursor()
 
-img = cm.load_image('../assets/images/test.png')
-cm.image(img, 0, 0, 30, 15)
+img = gh.load_image('../assets/images/test.png')
+gh.image(img, 0, 0, 30, 15)
 
-cm.run()
+gh.run()
 ```
 
 If it loads a active image such as gif format, it will returns a CImage array.
@@ -111,70 +111,70 @@ If it loads a active image such as gif format, it will returns a CImage array.
 <img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_image.png" />
 
 ```py
-import charming as cm
+import lighght as gh
 
 frames = None
 
 
-@cm.setup
+@gh.setup
 def setup():
     global frames
-    cm.full_screen()
-    cm.no_cursor()
-    frames = cm.load_image('../assets/images/test.gif')
+    gh.full_screen()
+    gh.no_cursor()
+    frames = gh.load_image('../assets/images/test.gif')
 
 
-@cm.draw
+@gh.draw
 def draw():
-    cm.background(' ')
-    index = int(cm.get_frame_count() / 2) % len(frames)
+    gh.background(' ')
+    index = int(gh.get_frame_count() / 2) % len(frames)
     frame = frames[index]
-    cm.image(frame, 0, 0, 30, 15)
+    gh.image(frame, 0, 0, 30, 15)
 
 
-cm.run()
+gh.run()
 ```
 
 <img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_load_image.gif" />
 
-<a name="no_tint" href="#no_tint">#</a> cm.**no_tint**()
+<a name="no_tint" href="#no_tint">#</a> gh.**no_tint**()
 
 Removes the current fill value for displaying images and reverts to displaying images with their original color.
 
 ```py
-import charming as cm
+import lighght as gh
 
-cm.full_screen()
-cm.no_cursor()
+gh.full_screen()
+gh.no_cursor()
 
-img = cm.load_image('../assets/images/test.png')
-cm.tint('O', cm.RED)
-cm.image(img, 0, 0, 30, 15)
+img = gh.load_image('../assets/images/test.png')
+gh.tint('O', gh.RED)
+gh.image(img, 0, 0, 30, 15)
 
-cm.no_tint()
-cm.image(img, 32, 0, 30, 15)
+gh.no_tint()
+gh.image(img, 32, 0, 30, 15)
 
-cm.run()
+gh.run()
 ```
 
 <img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_no_tint.png" />
 
-<a name="tint" href="#tint">#</a> cm.**tint**(*ch*=" "[, *fg*[, *bg*]])<br>
-<a name="tint" href="#tint">#</a> cm.**tint**(*ccolor*)
+<a name="tint" href="#tint">#</a> gh.**tint**(*ch*=" "[, *fg*[, *bg*]])<br>
+<a name="tint" href="#tint">#</a> gh.**tint**(*ccolor*)
 
 Sets the fill value for displaying images. Images can be tinted to specified character and foreground color.
 
 ```py
-import charming as cm
+import lighght as gh
 
-cm.full_screen()
-cm.no_cursor()
+gh.full_screen()
+gh.no_cursor()
 
-img = cm.load_image('../assets/images/test.png')
-cm.tint('O', cm.RED)
-cm.image(img, 0, 0, 30, 15)
+img = gh.load_image('../assets/images/test.png')
+gh.tint('O', gh.RED)
+gh.image(img, 0, 0, 30, 15)
 
-cm.run()
+gh.run()
 ```
 
 <img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_tint.png" />

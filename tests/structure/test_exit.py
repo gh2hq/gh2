@@ -1,23 +1,23 @@
-import charming as cm
+import lighght as gh
 
 
-@cm.setup
+@gh.setup
 def setup():
-    cm.full_screen()
-    cm.no_cursor()
-    cm.color_mode(cm.RGB)
+    gh.full_screen()
+    gh.no_cursor()
+    gh.color_mode(gh.RGB)
 
 
-@cm.draw
+@gh.draw
 def draw():
-    b = cm.get_frame_count() % 255
+    b = gh.get_frame_count() % 255
     color = (0, 0, b)
-    cm.background(' ', color, color)
+    gh.background(' ', color, color)
 
 
-@cm.mouse_clicked
+@gh.mouse_clicked
 def mouse_clicked():
-    cm.exit()
+    gh.exit()
 
 
-cm.run()
+gh.run()
