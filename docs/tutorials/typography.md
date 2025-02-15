@@ -1,6 +1,6 @@
 # Typography
 
-It is as easy as Processing to display text in Lighght, but only with three level of text size.
+It is as easy as Processing to display text in gh2, but only with three level of text size.
 
 - **NORMAL**: Draw some basic words or ANSII Art to the terminal.
 - **BIG**: Easily convert some normal words to ANSII Art words.
@@ -9,9 +9,9 @@ It is as easy as Processing to display text in Lighght, but only with three leve
 ## Normal size
 
 ```py
-''' lighght text: normal size '''
+''' gh2 text: normal size '''
 
-import lighght as app
+import gh2 as app
 
 app.full_screen()
 
@@ -41,9 +41,9 @@ app.run()
 ## Big size
 
 ```py
-''' lighght text: big size '''
+''' gh2 text: big size '''
 
-import lighght as app
+import gh2 as app
 
 app.full_screen()
 
@@ -64,9 +64,9 @@ app.run()
 ## Large size
 
 ```py
-''' lighght text: normal size '''
+''' gh2 text: normal size '''
 
-import lighght as app
+import gh2 as app
 
 app.full_screen()
 app.no_cursor()

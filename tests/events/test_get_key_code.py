@@ -1,4 +1,4 @@
-import lighght as gh
+import gh2 as gh
 
 # CODED, ESCAPE, LEFT, UP, RIGHT, DOWN, BACKSPACE, TAB, ENTER, SPACE
 

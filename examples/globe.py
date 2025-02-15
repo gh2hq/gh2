@@ -1,4 +1,4 @@
-import lighght as gh
+import gh2 as gh
 
 globe_frames = None
 fall_frames = None

@@ -5,7 +5,7 @@
 Print output to file to debug.
 
 ```py
-import lighght as app
+import gh2 as app
 
 app.print(1)
 app.print([1, 2, 3])
@@ -17,7 +17,7 @@ app.print(2, 3, {'hello': 1}, test="test")
 Checks the type of params to output the potential error.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.check_params()

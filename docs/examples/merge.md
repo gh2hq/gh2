@@ -8,7 +8,7 @@ This is visualization for merge sort which shows the progress of sorting traditi
 
 ```py
 from random import shuffle
-import lighght as gh
+import gh2 as gh
 
 sorted = None
 j = 0

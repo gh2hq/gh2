@@ -11,7 +11,7 @@ Set the cursor visible.
 Set the positions of cursor in cells.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.cursor()
@@ -26,7 +26,7 @@ gh.run()
 Hide the cursor.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()
@@ -45,7 +45,7 @@ Specifies the number of frames to be displayed every second. For example, the fu
 The system variable frameCount contains the number of frames that have been displayed since the program started.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 
 @gh.setup
@@ -76,7 +76,7 @@ Sets the sketch to fill the entire terminal.
 The default mode is single mode which means render each character with only one cell. It works fine with character which take only one cell such as 'A', ';', etc.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 x = 0
 
@@ -102,12 +102,12 @@ gh.run()
 
 The double render mode will use two cells to render a shape character. If a character is two-cell width (💘, 🌈, etc.), it only render once while one-cell width character (a, ;, etc.) will be render twice.
 
-In some case, Lighght cant not get the right width for characters, you can use a tuple (ch, width) to specify the width of character to avoid unexpected mess.
+In some case, gh2 cant not get the right width for characters, you can use a tuple (ch, width) to specify the width of character to avoid unexpected mess.
 
 In double mode, a text character will still use one cell to render for one-cell width.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 
 
@@ -169,7 +169,7 @@ System variable that stores the height of the drawing canvas.
 System variable that stores the width of the drawing canvas.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()
@@ -189,7 +189,7 @@ The default mode is single mode which means render each character with only one 
 
 The double render mode will use two cells to render a shape character. If a character is two-cell width (💘, 🌈, etc.), it only render once while one-cell width character (a, ;, etc.) will be render twice.
 
-In some case, Lighght cant not get the right width for characters, you can use a tuple (ch, width) to specify the width of character to avoid unexpected mess.
+In some case, gh2 cant not get the right width for characters, you can use a tuple (ch, width) to specify the width of character to avoid unexpected mess.
 
 In double mode, a text character will still use one cell to render for one-cell width.
 

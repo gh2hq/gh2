@@ -7,7 +7,7 @@ This is the art visualization for Prim algorithm, inspired by [Mike Bostock](htt
 ![bfs](https://raw.githubusercontent.com/charming-art/public-files/master/example_prim.png)
 
 ```py
-import lighght as gh
+import gh2 as gh
 from random import shuffle
 
 vertices = None

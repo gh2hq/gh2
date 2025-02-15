@@ -1,4 +1,4 @@
-import lighght as app
+import gh2 as app
 
 img = None
 

@@ -1,6 +1,6 @@
 # API Reference
 
-Lighght implements most of Processing's APIs related to 2D, all of the supported APIs are list below. Noticed that the API reference for Lighght copies most of [Processing's API reference](https://processing.org/reference/) but replace examples and some features for Lighght.
+gh2 implements most of Processing's APIs related to 2D, all of the supported APIs are list below. Noticed that the API reference for gh2 copies most of [Processing's API reference](https://processing.org/reference/) but replace examples and some features for gh2.
 
 - [Color](#color)
 - [Constants](#constants)
@@ -26,7 +26,7 @@ Methods for creating, reading and setting colors.
 - [gh.no_fill](./color.md#no_fill) - Disables filling shapes.
 - [gh.no_stroke](./color.md#no_stroke) - Disables drawing the stroke (outline).
 - [gh.stroke](./color.md#stroke) - Sets the color used to draw lines and borders around shapes.
-- [gh.color_mode](./color.md#color_mode) - Changes the way Lighght interprets color data.
+- [gh.color_mode](./color.md#color_mode) - Changes the way gh2 interprets color data.
 - [gh.lerp_color](./color.md#lerp_color) - Blends two colors to find a third color somewhere between them.
 
 ## Constants
@@ -52,7 +52,7 @@ Methods for drawing image to screen.
 
 ### CImage
 
-Date type for Lighght to store and manipulate image.
+Date type for gh2 to store and manipulate image.
 
 - [gh.CImage](./image.md#cimage) - Creates a new CImage (the datatype for storing images).
 - [CImage.load_pixels](./image.md#load_pixels) - Loads the pixels data for this image into the `pixels` attribute.
@@ -215,7 +215,7 @@ Methods for controlling the running flow of sketch.
 - [gh.setup](./structure.md#setup) - The function decorated by setup() decorator is called once when the program starts.
 - [gh.draw](./structure.md#draw) - The function decorated by draw() called directly after setup(), it continuously executes the lines of code contained inside its block until the program is stopped or no_loop() is called.
 - [gh.run](./structure.md#run) - Run the sketch or nothing magic will happen.
-- [gh.no_loop](./structure.md#no_loop) - Stops Lighght from continuously executing the code within draw().
+- [gh.no_loop](./structure.md#no_loop) - Stops gh2 from continuously executing the code within draw().
 - [gh.loop](./structure.md#loop) - The draw() loop may be stopped by calling no_loop(). In that case, the draw() loop can be resumed with loop().
 - [gh.get_is_looping](./structure.md#get_is_looping) - get_is_looping() returns the current state for use within custom event handlers.
 - [gh.redraw](./structure.md#redraw) - Executes the code within draw() one time.

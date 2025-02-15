@@ -11,7 +11,7 @@ Methods for drawing 2D basic shapes.
 Draw an arc to the screen. If called with only x, y, w, h, start and stop, the arc will be drawn and filled as an open pie segment. If a mode parameter is provided, the arc will be filled like an open semi-circle (OPEN), a closed semi-circle (CHORD), or as a closed pie segment (PIE). The origin may be changed with the ellipseMode() function.The arc is always drawn clockwise from wherever start falls to wherever stop falls on the ellipse.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()
@@ -22,7 +22,7 @@ gh.run()
 <img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_arc_open.png" width="100%"/>
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()
@@ -33,7 +33,7 @@ gh.run()
 <img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_arc_pie.png" width="100%"/>
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()
@@ -48,7 +48,7 @@ gh.run()
 Draws a circle to the screen. A circle is a simple closed shape. It is the set of all points in a plane that are at a given distance from a given point, the centre. This function is a special case of the ellipse() function, where the width and height of the ellipse are the same. Height and width of the ellipse correspond to the diameter of the circle. By default, the first two parameters set the location of the centre of the circle, the third sets the diameter of the circle.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()
@@ -65,7 +65,7 @@ Draws an ellipse (oval) to the screen. By default, the first two parameters set 
 An ellipse with equal width and height is a circle. The origin may be changed with the ellipse_mode() function.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()
@@ -80,7 +80,7 @@ gh.run()
 Draws a line (a direct path between two points) to the screen. This width can be modified by using the stroke_weight() function. A line cannot be filled, therefore the fill() function will not affect the color of a line. So to color a line, use the stroke() function.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()
@@ -93,7 +93,7 @@ gh.run()
 <a name="point" href="#point">#</a> gh.**point**(*x*, *y*)
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()
@@ -108,7 +108,7 @@ gh.run()
 Draws a quad on the canvas. A quad is a quadrilateral, a four sided polygon. It is similar to a rectangle, but the angles between its edges are not constrained to ninety degrees. The first pair of parameters (x1,y1) sets the first vertex and the subsequent pairs should proceed clockwise or counter-clockwise around the defined shape.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()
@@ -128,7 +128,7 @@ gh.run()
 Draws a rectangle on the canvas. A rectangle is a four-sided closed shape with every angle at ninety degrees. By default, the first two parameters set the location of the upper-left corner, the third sets the width, and the fourth sets the height. The way these parameters are interpreted, may be changed with the rect_mode() function.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()
@@ -144,7 +144,7 @@ Draws a square to the screen. A square is a four-sided shape with every angle at
 
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()
@@ -159,7 +159,7 @@ gh.run()
 Draws a triangle to the canvas. A triangle is a plane created by connecting three points. The first two arguments specify the first point, the middle two arguments specify the second point, and the last two arguments specify the third point.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()
@@ -186,7 +186,7 @@ The default mode is CENTER, in which the first two parameters are interpreted as
 ellipse_mode(RADIUS) also uses the first two parameters as the shape's center point's x and y coordinates, but uses the third and fourth parameters to specify half of the shape's width and height.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()
@@ -211,7 +211,7 @@ ellipse_mode(CORNER) interprets the first two parameters as the upper-left corne
 ellipse_mode(CORNERS) interprets the first two parameters as the location of one corner of the ellipse's bounding box, and the third and fourth parameters as the location of the opposite corner.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()
@@ -240,7 +240,7 @@ The default mode is CORNER, which interprets the first two parameters as the upp
 rect_mode(CORNERS) interprets the first two parameters as the location of one of the corners, and the third and fourth parameters as the location of the diagonally opposite corner. Note, the rectangle is drawn between the coordinates, so it is not necessary that the first corner be the upper left corner.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()
@@ -265,7 +265,7 @@ rect_mode(CENTER) interprets the first two parameters as the shape's center poin
 rect_mode(RADIUS) also uses the first two parameters as the shape's center point, but uses the third and fourth parameters to specify half of the shape's width and height respectively.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()
@@ -290,7 +290,7 @@ gh.run()
 Sets the width of the stroke used for lines, points and the border around shapes. All widths are set in units of cells.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()
@@ -321,7 +321,7 @@ Methods for drawing custom shapes.
 Using the begin_shape() and end_shape() functions allow creating more complex forms. begin_shape() begins recording vertices for a shape and end_shape() stops recording. The value of the kind parameter tells it which types of shapes to create from the provided vertices. With no mode specified, the shape can be any irregular polygon.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 # environment
 gh.full_screen()
@@ -345,7 +345,7 @@ gh.run()
 <img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_begin_shape_polygon.png" width="100%"/>
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 # environment
 gh.full_screen()
@@ -369,7 +369,7 @@ gh.run()
 <img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_begin_shape_lines.png" width="100%"/>
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 # environment
 gh.full_screen()
@@ -393,7 +393,7 @@ gh.run()
 <img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_begin_shape_points.png" width="100%"/>
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 # environment
 gh.full_screen()
@@ -419,7 +419,7 @@ gh.run()
 <img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_begin_shape_triangles.png" width="100%"/>
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 # environment
 gh.full_screen()
@@ -446,7 +446,7 @@ gh.run()
 <img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_begin_shape_triangle_strip.png" width="100%"/>
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 # environment
 gh.full_screen()
@@ -472,7 +472,7 @@ gh.run()
 <img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_begin_shape_triangle_fan.png" width="100%"/>
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 # environment
 gh.full_screen()
@@ -500,7 +500,7 @@ gh.run()
 <img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_begin_shape_quads.png" width="100%"/>
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 # environment
 gh.full_screen()
@@ -532,7 +532,7 @@ gh.run()
 The end_shape() function is the companion to begin_shape() and may only be called after begin_shape(). When endShape() is called, all of image data defined since the previous call to begin_shape() is written into the image buffer. The constant CLOSE as the value for the MODE parameter to close the shape (to connect the beginning and the end).
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 # environment
 gh.full_screen()
@@ -565,7 +565,7 @@ gh.run()
 All shapes are constructed by connecting a series of vertices. vertex() is used to specify the vertex coordinates for points, lines, triangles, quads, and polygons. It is used exclusively within the begin_shape() and end_shape() functions.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 # environment
 gh.full_screen()
@@ -593,7 +593,7 @@ gh.run()
 The syntactic sugar for begin_shape() and end_shape().
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 # environment
 gh.full_screen()
@@ -622,7 +622,7 @@ Use the begin_contour() and end_contour() functions to create negative shapes wi
 These functions can only be used within a begin_shape()/end_shape() pair and transformations such as translate(), rotate(), and scale() do not work within a begin_contour()/end_contour() pair. It is also not possible to use other shapes, such as ellipse() or rect() within.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 # environment
 gh.full_screen()
@@ -660,7 +660,7 @@ gh.run()
 The syntactic sugar for begin_contour() and end_contour().
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 # environment
 gh.full_screen()
@@ -695,7 +695,7 @@ Specifies vertex coordinates for Bezier curves. Each call to bezier_vertex() def
 The first time bezier_vertex() is used within a begin_shape() call, it must be prefaced with a call to vertex() to set the first anchor point. This function must be used between begin_shape() and end_shape() and only when there is no MODE or POINTS parameter specified to begin_shape().
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 # environment
 gh.full_screen()
@@ -723,7 +723,7 @@ Specifies vertex coordinates for curves. This function may only be used between 
 The first and last points in a series of curve_vertex() lines will be used to guide the beginning and end of a the curve. A minimum of four points is required to draw a tiny curve between the second and third points. Adding a fifth point with curve_vertex() will draw the curve between the second, third, and fourth points. The curve_vertex() function is an implementation of Catmull-Rom splines.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 # environment
 gh.full_screen()
@@ -766,7 +766,7 @@ Given the x or y co-ordinate values of control and anchor points of a bezier cur
 Evaluates the tangent to the Bezier at position t for points a, b, c, d. The parameters a and d are the first and last points on the curve, and b and c are the control points. The final parameter t varies between 0 and 1.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()
@@ -815,7 +815,7 @@ Evaluates the tangent to the curve at position t for points a, b, c, d. The para
 Modifies the quality of forms created with curve() and curve_vertex().The parameter tightness determines how the curve fits to the vertex points. The value 0.0 is the default value for tightness (this value defines the curves to be Catmull-Rom splines) and the value 1.0 connects all the points with straight lines. Values within the range -5.0 and 5.0 will deform the curves but will leave them recognizable and as values increase in magnitude, they will continue to deform.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()
@@ -846,7 +846,7 @@ gh.run()
 Evaluates the curve at position t for points a, b, c, d. The parameter t varies between 0 and 1, a and d are control points of the curve, and b and c are the start and end points of the curve. This can be done once with the x coordinates and a second time with the y coordinates to get the location of a curve at t.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()

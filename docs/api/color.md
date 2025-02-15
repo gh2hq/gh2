@@ -7,7 +7,7 @@ Methods for creating, reading and setting colors.
 Creates colors for storing in variables of the color data type. The `fg` or `bg` parameters are interpreted as ANSI, RGB or HSB values depending on the current `color_mode`.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()
@@ -42,7 +42,7 @@ Sets the color used for the background of terminal. The `fg` or `bg` parameters 
 This function is typically used within draw() to clear the display window at the beginning of each frame, but it can be used inside setup() to set the background on the first frame of animation or if the background need only be set once.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 
 @gh.setup
@@ -87,7 +87,7 @@ gh.run()
 Sets the color used to fill shapes. The `fg` or `bg` parameters are interpreted as ANSI, RGB or HSB values depending on the current `color_mode`.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()
@@ -108,7 +108,7 @@ gh.run()
 Disables filling shapes. If both `no_stroke()` and `no_fill()` are called, nothing will be drawn to the screen.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()
@@ -129,7 +129,7 @@ gh.run()
 Disables drawing the stroke (outline). If both `no_stroke()` and `no_fill()` are called, nothing will be drawn to the screen.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()
@@ -151,7 +151,7 @@ gh.run()
 Sets the color used to draw lines and borders around shapes. The `fg` or `bg` parameters are interpreted as ANSI, RGB or HSB values depending on the current `color_mode`.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()
@@ -167,10 +167,10 @@ gh.run()
 
 <a name="color_mode" href="#color_mode">#</a> gh.**color_mode**(*mode*=ANSI | RGB | HSB[, *max1*[, *max2*, [, *max3*]]])
 
-color_mode() changes the way Lighght interprets color data. By default, the parameters for fill(), stroke(), background(), and color() are defined by values between 0 and 255 using ANSI color.
+color_mode() changes the way gh2 interprets color data. By default, the parameters for fill(), stroke(), background(), and color() are defined by values between 0 and 255 using ANSI color.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()
@@ -189,7 +189,7 @@ gh.run()
 To make it easier to use ANSI color, there are some predefined constants which can be used directly as below.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()
@@ -221,7 +221,7 @@ gh.run()
 Setting `color_mode(HSB)` lets you use the HSB system instead. In this situation, each color is represented by three-elements tuple `(hue, saturation, brightness)`. The hue channel is between 0 and 255, and the saturation or brightness channel is between 0 and 100. It is useful to draw a rainbow.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.color_mode(gh.HSB)
@@ -246,7 +246,7 @@ gh.run()
 Setting `color_mode(RGB)` lets you use the HSB system instead. In this situation, each color is represented by three-elements tuple `(red, green, blue)`. The red, green, blue channels are all between 0 and 255. `(c,)` is short for `(c, c, c)`. It can be used to draw color with only one channel.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()
@@ -268,7 +268,7 @@ gh.run()
 It also can be used to draw gray colors.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.color_mode(gh.RGB)
@@ -294,7 +294,7 @@ Blends two colors to find a third color somewhere between them. The amt paramete
 Noticed that not only does it interpolate color `bg` and `fg`, it also will interpolates `ch` as well.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()
@@ -318,7 +318,7 @@ gh.run()
 It also can be used to interpolate color in RGB and HSB color mode.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()

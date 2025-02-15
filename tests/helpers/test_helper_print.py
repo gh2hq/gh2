@@ -1,4 +1,4 @@
-import lighght as gh
+import gh2 as gh
 
 gh.print(1)
 gh.print([1, 2, 3])

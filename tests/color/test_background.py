@@ -1,6 +1,6 @@
 # preview: https://raw.githubusercontent.com/charming-art/public-files/master/test_background.gif
 
-import lighght as gh
+import gh2 as gh
 
 
 @gh.setup

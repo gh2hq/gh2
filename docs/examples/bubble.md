@@ -8,7 +8,7 @@ This is visualization for bubble sort which shows the progress of sorting tradit
 
 ```py
 from random import shuffle
-import lighght as gh
+import gh2 as gh
 
 sorted = None
 j = 0

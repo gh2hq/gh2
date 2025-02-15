@@ -15,7 +15,7 @@ The system variable key always contains the value of the most recent key on the 
 The boolean system variable key_pressed is true if any key is pressed and false if no keys are pressed.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 
 @gh.setup
@@ -51,7 +51,7 @@ The variable keyCode is used to detect special keys such as the arrow keys (UP, 
 The function decorated by key_pressed decorator is called once every time a key is pressed.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 # CODED, ESCAPE, LEFT, UP, RIGHT, DOWN, BACKSPACE, TAB, ENTER, SPACE
 
@@ -92,7 +92,7 @@ gh.run()
 The function decorated by key_released decorator is called once every time a key is released.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 char = ''
 
@@ -131,7 +131,7 @@ gh.run()
 The function decorated by key_typed decorator is called once every time a key is typed.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 char = ''
 
@@ -178,7 +178,7 @@ The system variable mouse_x always contains the current horizontal coordinate of
 The system variable mouse_y always contains the current vertical coordinate of the mouse.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 
 @gh.setup
@@ -210,7 +210,7 @@ The mouse_pressed variable stores whether or not a mouse button is currently bei
 When a mouse button is pressed, the value of the system variable mouseButton is set to either LEFT, RIGHT, or CENTER, depending on which button is pressed.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 
 @gh.setup
@@ -238,7 +238,7 @@ gh.run()
 <a name="mouse_clicked" href="#mouse_clicked">#</a> gh.**mouse_clicked**(*foo*)
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 char = 'O'
 
@@ -275,7 +275,7 @@ gh.run()
 The function decorated mouse_released decorator is called after a mouse button has been pressed.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 char = 'O'
 
@@ -310,7 +310,7 @@ gh.run()
 <a name="mouse_released" href="#mouse_released">#</a> gh.**mouse_released**(*foo*)
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 char = 'O'
 
@@ -375,7 +375,7 @@ The function decorated cursor_pressed decorator is called after a cursor pressed
 The boolean system variable cursor_moved is true if any cursor is pressed and false if cursor is not pressed.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 
 @gh.setup

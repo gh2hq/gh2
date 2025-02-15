@@ -5,7 +5,7 @@
 The function decorated by setup() decorator is called once when the program starts. It's used to define initial environment properties such as screen size and background color and to load media such as images as the program starts.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 
 a = 0
@@ -37,7 +37,7 @@ gh.run()
 The function decorated by draw() called directly after setup(), it continuously executes the lines of code contained inside its block until the program is stopped or no_loop() is called. Note if no_loop() is called in setup(), draw() will still be executed once before stopping. draw() is called automatically and should never be called explicitly.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 y = 0
 
@@ -67,7 +67,7 @@ gh.run()
 Run the sketch or nothing magic will happen.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()
@@ -81,16 +81,16 @@ gh.run()
 
 <a name="no_loop" href="#no_loop">#</a> gh.**no_loop**()
 
-Stops Lighght from continuously executing the code within draw(). If loop() is called, the code in draw() begins to run continuously again. If using no_loop() in setup(), it should be the last line inside the block.
+Stops gh2 from continuously executing the code within draw(). If loop() is called, the code in draw() begins to run continuously again. If using no_loop() in setup(), it should be the last line inside the block.
 
 <a name="loop" href="#loop">#</a> gh.**loop**()
 
-By default, Lighght loops through draw() continuously, executing the code within it. However, the draw() loop may be stopped by calling no_loop(). In that case, the draw() loop can be resumed with loop().
+By default, gh2 loops through draw() continuously, executing the code within it. However, the draw() loop may be stopped by calling no_loop(). In that case, the draw() loop can be resumed with loop().
 
 <a name="get_is_looping" href="#get_is_looping">#</a> gh.**get_is_looping**()
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 y = 0
 
@@ -127,7 +127,7 @@ gh.run()
 Executes the code within draw() one time. This function allows the program to update the display window only when necessary, for example when an event registered by mouse_pressed() or key_pressed() occurs.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 x = 0
 
@@ -163,7 +163,7 @@ gh.run()
 The push() function saves the current drawing style settings and transformations, while pop() restores these settings. Note that these functions are always used together. They allow you to change the style and transformation settings and later return to what you had. When a new state is started with push(), it builds on the current style and transform information.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()
@@ -189,7 +189,7 @@ gh.run()
 The syntactic sugar for push() and pop().
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()
@@ -214,7 +214,7 @@ gh.run()
 Exit the sketch.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 
 @gh.setup

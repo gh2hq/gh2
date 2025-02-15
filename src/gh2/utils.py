@@ -200,7 +200,7 @@ class Logger(metaclass=ABCMeta):
 if DEBUG_MODE:
     import matplotlib.pyplot as plt
 
-logging.basicConfig(filename='lighght.log', level=logging.DEBUG)
+logging.basicConfig(filename='gh2.log', level=logging.DEBUG)
 
 class LocalLogger(Logger):
 

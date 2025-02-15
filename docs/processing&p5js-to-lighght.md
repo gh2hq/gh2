@@ -1,8 +1,8 @@
-# Processing&P5.js to Lighght
+# Processing&P5.js to gh2
 
-Lighght implements most of Processing's APIs related to 2D, which can be found [here](./api/readme.md). But due to the grammar differences between Python and Java and different design purposes, there are some differences between the usage of Lighght and Processing&P5.js.
+gh2 implements most of Processing's APIs related to 2D, which can be found [here](./api/readme.md). But due to the grammar differences between Python and Java and different design purposes, there are some differences between the usage of gh2 and Processing&P5.js.
 
-This article is going to show the main difference between them and help you migrate from Processing&P5.js to Lighght quickly.
+This article is going to show the main difference between them and help you migrate from Processing&P5.js to gh2 quickly.
 
 - [APIs Names](#apis-names)
 - [Register Hooks](#register-hooks)
@@ -15,10 +15,10 @@ This article is going to show the main difference between them and help you migr
 
 ## APIs Names
 
-All the APIs in Processing are like `aaaBbb`, but in Lighght they are like `aaa_bbb`. For example, `ellipse_mode` in Lighght equals to `ellipseMode` in Processing and `begin_shape` equals to `beginShape`.
+All the APIs in Processing are like `aaaBbb`, but in gh2 they are like `aaa_bbb`. For example, `ellipse_mode` in gh2 equals to `ellipseMode` in Processing and `begin_shape` equals to `beginShape`.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()
@@ -29,26 +29,26 @@ gh.rect(0, 0, 10, 10)
 gh.run()
 ```
 
-There is no `PVector` object in Lighght, but you can use `CVector` instead.
+There is no `PVector` object in gh2, but you can use `CVector` instead.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 v1 = gh.CVector()
 v2 = gh.CVector()
 v3 = v1 + v2
 ```
 
-In Processing, you can use all the global variables directly, such as `width`, `height`, `mouseX`, etc. But in Lighght, you should call a method to get the global variable you need. For example, you can get `width` by call `get_width()` or calling `get_mouse_x()` to get `mouseX`.
+In Processing, you can use all the global variables directly, such as `width`, `height`, `mouseX`, etc. But in gh2, you should call a method to get the global variable you need. For example, you can get `width` by call `get_width()` or calling `get_mouse_x()` to get `mouseX`.
 
 ## Register Hooks
 
-In Processing, you don't have to import all the APIs and it will automatically run hooks such as `setup`, `draw`, `mouseClicked`, etc. But In Lighght, you have to import all the APIs at first and use **decorators** to register hooks.
+In Processing, you don't have to import all the APIs and it will automatically run hooks such as `setup`, `draw`, `mouseClicked`, etc. But In gh2, you have to import all the APIs at first and use **decorators** to register hooks.
 
 ```py
 # Import all the APIs and bind them to a namespce.
 # You can name it whaterver you like, here name it as 'app'.
-import lighght as app
+import gh2 as app
 
 # Register setup hook which will excute only once.
 @app.setup
@@ -78,7 +78,7 @@ app.run()
 
 ## Color System
 
-In Processing, you can use three or four number `(r, g, b)` or `(r, g, b, a)` to represent a color or take them as parameters to color-related APIs, such as `fill(100, 34, 0, 100)` or `stroke(0, 0, 0)`. But in Lighght, you need three different channels to represet a color or give them to color-related APIs:
+In Processing, you can use three or four number `(r, g, b)` or `(r, g, b, a)` to represent a color or take them as parameters to color-related APIs, such as `fill(100, 34, 0, 100)` or `stroke(0, 0, 0)`. But in gh2, you need three different channels to represet a color or give them to color-related APIs:
 
 - `ch`: character, ascii code or unicode (including cjk characters or emoji).
 - `fg`: foreground color, a number(0 ~ 255 by default) if the color mode is ANSI, a tuple with length equaling to 1or 3 if the color mode is HSB or RGB.

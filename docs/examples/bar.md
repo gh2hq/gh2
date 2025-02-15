@@ -1,11 +1,11 @@
 # Covid-19 Bar Chart
 
-There is a bar chart for mock data about covid-19 virus created by Lighght. Instead of only using green for the curve, red for the confirm, gray for the dead, it also use 🌈 to express happiness and hope, use 🦠 to strengthen the warning, and use ☠️ to show sadness and fear. They are indeed make this chart more vivid and unforgettable. [[source](../../examples/bar.py)]
+There is a bar chart for mock data about covid-19 virus created by gh2. Instead of only using green for the curve, red for the confirm, gray for the dead, it also use 🌈 to express happiness and hope, use 🦠 to strengthen the warning, and use ☠️ to show sadness and fear. They are indeed make this chart more vivid and unforgettable. [[source](../../examples/bar.py)]
 
 ![preview.md](https://raw.githubusercontent.com/charming-art/public-files/master/example_barchart.png)
 
 ```py
-import lighght as gh
+import gh2 as gh
 from scales import scale_linear, scale_band, scale_ordinal
 
 # mock data

@@ -1,13 +1,13 @@
 # Cherry Blossom Globe
 
-A cherry blossom gif and a globe gif can create a wonderful world by Lighght. [[source](../../examples/globe.py)]
+A cherry blossom gif and a globe gif can create a wonderful world by gh2. [[source](../../examples/globe.py)]
 
 <img src="https://raw.githubusercontent.com/charming-art/public-files/master/example_globe_globe.gif" height="200px"/> &emsp; <img src="https://raw.githubusercontent.com/charming-art/public-files/master/example_globe_fall.gif" height="200px" />
 
 ![preview.md](https://raw.githubusercontent.com/charming-art/public-files/master/example_globe.gif)
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 globe_frames = None
 fall_frames = None

@@ -7,7 +7,7 @@ Draws text to the screen. Displays the information specified in the first parame
 A default font will be used unless a font is set with the text_font() function and a default size will be used unless a font is set with text_size(). Change the color of the text with the stroke() function. The text displays in relation to the text_align() function, which gives the option to draw to the left, right, and center of the coordinates.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 # If you want to draw a ascii text, you'd
 # better use raw string: r'''xxx'''.
@@ -45,7 +45,7 @@ gh.run()
 Calculates and returns the width of any character or text string.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()
@@ -73,7 +73,7 @@ gh.run()
 Sets the current alignment for drawing text.The parameters LEFT, CENTER, and RIGHT set the display characteristics of the letters in relation to the values for the x and y parameters of the text() function.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 text = 'charming'
 
@@ -103,7 +103,7 @@ gh.run()
 <img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_text_align_x.png" />
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 text = 'ch'
 
@@ -138,7 +138,7 @@ gh.run()
 Sets the current font size.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 text = 'charming'
 
@@ -163,7 +163,7 @@ gh.run()
 Calculates and returns the height of any character or text string.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()
@@ -190,7 +190,7 @@ gh.run()
 Returns the supported font list for text with BIG font size.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 font_list = gh.get_font_list()
 
@@ -203,7 +203,7 @@ print(len(font_list)) # 425
 Sets the current font that will be drawn with the text() function.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()

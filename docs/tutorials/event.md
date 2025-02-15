@@ -6,12 +6,12 @@ Similar to `setup` and `draw` function, you must register event listeners (`mous
 
 ## Cursor event
 
-Besides mouse events and keyboard events, Lighght provide a unique type of events which deeply embed in terminal: **cursor events**, which will be triggered if you type or press the `UP/Right/DOWN/LEFT` arrow keys to move the cursor on the terminal.
+Besides mouse events and keyboard events, gh2 provide a unique type of events which deeply embed in terminal: **cursor events**, which will be triggered if you type or press the `UP/Right/DOWN/LEFT` arrow keys to move the cursor on the terminal.
 
 ```py
-''' lighght: event'''
+''' gh2: event'''
 
-import lighght as app
+import gh2 as app
 
 @app.setup
 def setup():

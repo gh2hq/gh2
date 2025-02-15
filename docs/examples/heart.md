@@ -5,7 +5,7 @@ This is a beating heart made up of a rectangle and two circles full of 💘 to s
 ![preview.md](https://raw.githubusercontent.com/charming-art/public-files/master/example_heart.gif)
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 
 @gh.setup

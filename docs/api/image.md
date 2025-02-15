@@ -4,14 +4,14 @@ Methods for drawing image to screen.
 
 ## CImage
 
-Date type for Lighght to store and manipulate image.
+Date type for gh2 to store and manipulate image.
 
 <a name="cimage" href="#cimage">#</a> gh.**CImage**(*data*, *width*, *height*) : CImage
 
 Creates a new CImage (the datatype for storing images). This provides a fresh buffer of pixels to play with. Set the size of the buffer with the width and height parameters.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()
@@ -46,7 +46,7 @@ Set the color of a single pixel.
 Get the color of a single pixel.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()
@@ -75,7 +75,7 @@ Methods for display images.
 Draw an image to the p5.js canvas which will be affected by **cm**.*rect_mode*.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()
@@ -95,7 +95,7 @@ Loads an image from a path and creates a CImage or CImage array from it.
 If it loads a static image such as png format, it will returns a CImage.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()
@@ -111,7 +111,7 @@ If it loads a active image such as gif format, it will returns a CImage array.
 <img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_image.png" />
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 frames = None
 
@@ -142,7 +142,7 @@ gh.run()
 Removes the current fill value for displaying images and reverts to displaying images with their original color.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()
@@ -165,7 +165,7 @@ gh.run()
 Sets the fill value for displaying images. Images can be tinted to specified character and foreground color.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()

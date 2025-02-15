@@ -1,5 +1,5 @@
 from random import shuffle
-import lighght as gh
+import gh2 as gh
 
 sorted = None
 j = 0

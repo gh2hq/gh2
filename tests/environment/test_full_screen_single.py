@@ -1,4 +1,4 @@
-import lighght as gh
+import gh2 as gh
 
 x = 0
 

@@ -31,7 +31,7 @@ Returns the current second as a value from 0 - 59.
 Returns the current year as an integer (2003, 2004, 2005, etc).
   
 ```py
-import lighght as gh
+import gh2 as gh
 
 
 @gh.setup

@@ -25,7 +25,7 @@ Loads data from JSON file to dict object.
 ```
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 o = gh.load_json('../assets/files/test_object.json')
 a = gh.load_json('../assets/files/test_array.json')
@@ -47,7 +47,7 @@ Yuki, 10, '女'
 ```
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 o = gh.load_csv('../assets/files/test.csv')
 

@@ -1,4 +1,4 @@
-import lighght as gh
+import gh2 as gh
 
 # If you want to draw a ascii text, you'd
 # better use raw string: r'''xxx'''.

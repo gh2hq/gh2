@@ -1,4 +1,4 @@
-import lighght as gh
+import gh2 as gh
 
 chars = ['💘', '🌈', 'A', ('⏰', 2), '🧚', '爱']
 texts = [

@@ -7,7 +7,7 @@ This is the art visualization for BFS algorithm, inspired by [Mike Bostock](http
 ![bfs](https://raw.githubusercontent.com/charming-art/public-files/master/example_bfs.png)
 
 ```py
-import lighght as gh
+import gh2 as gh
 from random import shuffle
 
 vertices = None

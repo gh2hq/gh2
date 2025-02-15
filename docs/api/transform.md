@@ -7,7 +7,7 @@ Specifies an amount to displace objects within the display window. The x paramet
 Transformations are cumulative and apply to everything that happens after and subsequent calls to the function accumulates the effect. For example, calling translate(50, 0) and then translate(20, 0) is the same as translate(70, 0). If translate() is called within draw(), the transformation is reset when the loop begins again. This function can be further controlled by using push() and pop().
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()
@@ -32,7 +32,7 @@ Transformations apply to everything that happens after and subsequent calls to t
 This function can be further controlled with push() and pop().
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()
@@ -56,7 +56,7 @@ Objects are always rotated around their relative position to the origin and posi
 Technically, rotate() multiplies the current transformation matrix by a rotation matrix. This function can be further controlled by the push() and pop().
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()
@@ -83,7 +83,7 @@ Transformations apply to everything that happens after and subsequent calls to t
 Technically, shear_x() multiplies the current transformation matrix by a rotation matrix. This function can be further controlled by the push() and pop() functions.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()
@@ -109,7 +109,7 @@ Transformations apply to everything that happens after and subsequent calls to t
 Technically, shear_y() multiplies the current transformation matrix by a rotation matrix. This function can be further controlled by the push() and pop() functions.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()

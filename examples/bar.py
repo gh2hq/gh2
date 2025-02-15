@@ -1,4 +1,4 @@
-import lighght as gh
+import gh2 as gh
 from scales import scale_linear, scale_band, scale_ordinal
 
 # mock data

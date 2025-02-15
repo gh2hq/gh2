@@ -5,7 +5,7 @@ There is a pie chart for mock data about the proportion of the population of dif
 ![preview.md](https://raw.githubusercontent.com/charming-art/public-files/master/example_piechart.png)
 
 ```py
-import lighght as gh
+import gh2 as gh
 from scales import scale_linear, scale_ordinal
 
 

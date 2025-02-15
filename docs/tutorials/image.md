@@ -1,13 +1,13 @@
 # Image
 
-In Lighght, it is possible for you to draw an image to terminal as simple as Processing, but only a subset of raw pixels will be displayed.
+In gh2, it is possible for you to draw an image to terminal as simple as Processing, but only a subset of raw pixels will be displayed.
 
 ## Static image
 
 ```py
-''' lighght: image '''
+''' gh2: image '''
 
-import lighght as app
+import gh2 as app
 
 app.no_cursor()
 app.full_screen()

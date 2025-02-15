@@ -5,7 +5,7 @@ It will be very romantic if you using snake-eating to write a poem: you move the
 ![preview.md](https://raw.githubusercontent.com/charming-art/public-files/master/example_snake.gif)
 
 ```py
-import lighght as gh
+import gh2 as gh
 from random import choice
 
 

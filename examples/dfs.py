@@ -1,4 +1,4 @@
-import lighght as gh
+import gh2 as gh
 from random import shuffle
 
 vertices = None

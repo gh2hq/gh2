@@ -1,4 +1,4 @@
-from lighght import map
+from gh2 import map
 
 
 def scale_band(domain, range, padding=0):

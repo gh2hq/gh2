@@ -1,4 +1,4 @@
-import lighght as gh
+import gh2 as gh
 
 
 bar_width = 5

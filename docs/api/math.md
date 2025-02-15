@@ -11,7 +11,7 @@ Methods for manipulation vector object which is useful for simulating physic sys
 A class to describe a two dimensional vector, specifically a Euclidean (also known as geometric) vector.
 
 ```py
-from lighght import CVector
+from gh2 import CVector
 
 v1 = CVector() 
 v2 = CVector(1, 2)
@@ -27,7 +27,7 @@ v2 # (1, 2)
 Set the components of the vector.
 
 ```py
-from lighght import CVector
+from gh2 import CVector
 
 v = CVector()
 v.set(1, 2) # (1, 2)
@@ -42,7 +42,7 @@ v1.set([2, 3]) # (2, 3)
 Make a new 2D unit vector with a random direction.
 
 ```py
-from lighght import CVector
+from gh2 import CVector
 from math import isclose
 
 v = CVector.random_2D()
@@ -54,7 +54,7 @@ isclose(v.mag, 1.0) # true
 Make a new 2D unit vector from an angle.
 
 ```py
-from lighght import CVector
+from gh2 import CVector
 from math import pi, isclose
 
 v = CVector.from_angle(math.pi / 3)
@@ -66,7 +66,7 @@ isclose(v.mag, 1.0) # true
 Get a copy of the vector.
 
 ```py
-from lighght import CVector
+from gh2 import CVector
 
 v = CVector(1, 2)
 v1 = v.copy() # (1, 2)
@@ -77,7 +77,7 @@ v1 = v.copy() # (1, 2)
 Calculate the magnitude of the vector.
 
 ```py
-from lighght import CVector
+from gh2 import CVector
 
 v = CVector(3, 4)
 v.mag # 5.0
@@ -88,7 +88,7 @@ v.mag # 5.0
 Calculate the magnitude of the vector, squared.
 
 ```py
-from lighght import CVector
+from gh2 import CVector
 
 v = CVector(3, 4)
 v.mag_sq() # 25
@@ -99,7 +99,7 @@ v.mag_sq() # 25
 Adds x and y components to a vector, one vector to another, or two independent vectors.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 v1 = gh.CVector(1, 2)
 v2 = gh.CVector(3, 4)
@@ -112,7 +112,7 @@ v1 += v2 # (4, 6)
 Subtract x and y components from a vector, one vector from another, or two independent vectors.
 
 ```py
-from lighght import CVector
+from gh2 import CVector
 
 v1 = CVector(4, 2)
 v2 = CVector(2, 1)
@@ -125,7 +125,7 @@ v1 -= v2 # (2, 1)
 Multiply a vector by a scalar.
 
 ```py
-from lighght import CVector
+from gh2 import CVector
 
 v =CVector(2, 3)
 v * 2 # (4, 6)
@@ -139,7 +139,7 @@ v *= 2 #(4, 6)
 Divide a vector by a scalar.
 
 ```py
-from lighght import CVector
+from gh2 import CVector
 
 v = CVector(2, 4)
 v / 2 # (1.0, 2.0)
@@ -151,7 +151,7 @@ v /= 2 # (1.0, 2.0)
 Calculate the distance between two points.
 
 ```py
-from lighght import CVector
+from gh2 import CVector
 
 v1 = CVector(1, 2)
 v2 = CVector(4, 6)
@@ -163,7 +163,7 @@ v1.dist(v2) # 5.0
 Calculate the dot product of two vectors.
 
 ```py
-from lighght import CVector
+from gh2 import CVector
 
 v1 = CVector(1, 2)
 v2 = CVector(2, 3)
@@ -175,7 +175,7 @@ v1.dot(v2) # 8
 Calculate and return the cross product.
 
 ```py
-from lighght import CVector
+from gh2 import CVector
 
 v1 = CVector(1, 2)
 v2 = CVector(2, 3)
@@ -187,7 +187,7 @@ v1.cross(v2) # -1
 Normalize the vector to a length of 1.
 
 ```py
-from lighght import CVector
+from gh2 import CVector
 from math import isclose
 
 v = CVector(3, 4)
@@ -199,7 +199,7 @@ isclose(v.normalize().mag, 1.0) # True
 Limit the magnitude of the vector.
 
 ```py
-from lighght import CVector
+from gh2 import CVector
 
 v = CVector(3, 4)
 v.limit(6).mag # 5.0
@@ -211,7 +211,7 @@ v.limit(4).mag # 4.0
 Set the magnitude of the vector.
 
 ```py
-from lighght import CVector
+from gh2 import CVector
 from math import isclose
 
 v = CVector(3, 4)
@@ -224,7 +224,7 @@ isclose(v.mag, 2) # True
 Calculate the angle of rotation for this vector.
 
 ```py
-from lighght import CVector
+from gh2 import CVector
 from math import pi, isclose
 
 v = CVector(1, 1)
@@ -236,7 +236,7 @@ isclose(v.heading(), pi / 4) # True
 Rotate the vector by an angle (2D only)
 
 ```py
-from lighght import CVector
+from gh2 import CVector
 from math import pi, isclose
 
 v = CVector(1, 1)
@@ -248,7 +248,7 @@ isclose(v.rotate(pi / 2).heading(), pi / 4 + pi / 2) # True
 Linear interpolate the vector to another vector.
 
 ```py
-from lighght import CVector
+from gh2 import CVector
 from math import isclose
 
 v1 = CVector(1, 2)
@@ -264,7 +264,7 @@ isclose(v3.y, 2.4) # True
 Calculate and return the angle between two vectors.
 
 ```py
-from lighght import CVector
+from gh2 import CVector
 from math import pi, isclose
 
 v1 = CVector.from_angle(pi / 4)
@@ -278,7 +278,7 @@ isclose(angle, pi / 3 - pi / 4) # True
 Return a representation of the vector as a float array.
 
 ```py
-from lighght import CVector
+from gh2 import CVector
 
 v = CVector(1, 2)
 v.array() # [1, 2]
@@ -293,7 +293,7 @@ Methods for basic math calculation.
 Calculates the absolute value (magnitude) of a number.
 
 ```py
-from lighght import abs
+from gh2 import abs
 
 abs(1) # 1
 abs(-1) # 1
@@ -305,7 +305,7 @@ abs(0) # 0
 Calculates the closest int value that is greater than or equal to the value of the parameter.
 
 ```py
-from lighght import ceil
+from gh2 import ceil
 
 ceil(1.2) # 2
 ceil(-1.2) # -1
@@ -318,7 +318,7 @@ ceil(-1) # -1
 Constrains a value to not exceed a maximum and minimum value.
 
 ```py
-from lighght import constrain
+from gh2 import constrain
 
 constrain(-1, 2, 3) # 2
 constrain(4, 2, 3) # 3
@@ -330,7 +330,7 @@ constrain(2.5, 2, 3) # 2.5
 Calculates the distance between two points.
 
 ```py
-from lighght import dist
+from gh2 import dist
 
 dist(0, 0, 1, 0) # 1.0
 dist(-1, -1, 2, 3) # 5.0
@@ -341,7 +341,7 @@ dist(-1, -1, 2, 3) # 5.0
 Returns Euler's number e (2.71828...) raised to the power of the n parameter.
 
 ```py
-from lighght import exp
+from gh2 import exp
 
 exp(1) # 2.718281828459045
 ```
@@ -351,7 +351,7 @@ exp(1) # 2.718281828459045
 Calculates the closest int value that is less than or equal to the value of the parameter.
 
 ```py
-from lighght import floor
+from gh2 import floor
 
 floor(1.2) # 1
 floor(-1.2) # -2
@@ -363,7 +363,7 @@ floor(0) # 0
 Calculates a number between two numbers at a specific increment.
 
 ```py
-from lighght import lerp
+from gh2 import lerp
 
 lerp(1, 2, 0) # 1
 lerp(1, 2, 1) # 2
@@ -375,7 +375,7 @@ lerp(10, 20, 0.2) # 12.0
 Calculates the natural logarithm (the base-e logarithm) of a number.
 
 ```py
-from lighght import log
+from gh2 import log
 
 log(math.e) # 1.0
 ```
@@ -385,7 +385,7 @@ log(math.e) # 1.0
 Calculates the magnitude (or length) of a vector.
 
 ```py
-from lighght import mag
+from gh2 import mag
 
 mag(3, 4) # 5.0
 mag(3, 4, 12) # 13.0
@@ -396,7 +396,7 @@ mag(3, 4, 12) # 13.0
 Re-maps a number from one range to another.
 
 ```py
-from lighght import map
+from gh2 import map
 
 map(1.5, 1, 2, 10, 20) # 15
 ```
@@ -406,7 +406,7 @@ map(1.5, 1, 2, 10, 20) # 15
 Determines the largest value in a sequence of numbers, and then returns that value.
 
 ```py
-from lighght import max
+from gh2 import max
 
 max(0, 1) # 1
 max(0, 1, 2) # 2
@@ -418,7 +418,7 @@ max([0, 1, 2, 3]) # 3
 Determines the smallest value in a sequence of numbers, and then returns that value.
 
 ```py
-from lighght import min
+from gh2 import min
 
 min(0, 1) # 0
 min(0, 1, 2) # 0
@@ -430,7 +430,7 @@ min([0, 1, 2, 3]) # 0
 Normalizes a number from another range into a value between 0 and 1.
 
 ```py
-from lighght import norm
+from gh2 import norm
 
 norm(20, 0, 50) # 0.4
 ```
@@ -440,7 +440,7 @@ norm(20, 0, 50) # 0.4
 Facilitates exponential expressions.
 
 ```py
-from lighght import pow
+from gh2 import pow
 
 pow(3, 2) # 9.0
 pow(4, 0.5) # 2.0
@@ -451,7 +451,7 @@ pow(4, 0.5) # 2.0
 Calculates the integer closest to the n parameter.
 
 ```py
-from lighght import round
+from gh2 import round
 
 round(9.2) # 9
 round(9.4) # 9
@@ -465,7 +465,7 @@ round(-1.5) # -2
 Squares a number (multiplies a number by itself).
 
 ```py
-from lighght import sq
+from gh2 import sq
 
 sq(5) # 25
 ```
@@ -475,7 +475,7 @@ sq(5) # 25
 Calculates the square root of a number.
 
 ```py
-from lighght import sqrt
+from gh2 import sqrt
 
 sqrt(25) # 5.0
 ```
@@ -489,7 +489,7 @@ Methods for calculate trigonometry.
 The inverse of cos(), returns the arc cosine of a value.
 
 ```py
-from lighght import acos
+from gh2 import acos
 
 acos(0.5) # math.pi / 3
 ```
@@ -499,7 +499,7 @@ acos(0.5) # math.pi / 3
 The inverse of sin(), returns the arc sine of a value.
 
 ```py
-from lighght import asin
+from gh2 import asin
 
 acos(1) # math.pi / 2
 ```
@@ -509,7 +509,7 @@ acos(1) # math.pi / 2
 The inverse of tan(), returns the arc tangent of a value.
 
 ```py
-from lighght import atan
+from gh2 import atan
 
 atan(1) # math.pi / 4
 ```
@@ -519,7 +519,7 @@ atan(1) # math.pi / 4
 Calculates the angle (in radians) from a specified point to the coordinate origin as measured from the positive x-axis.
 
 ```py
-from lighght import atan2
+from gh2 import atan2
 
 atan2(1, 1) # math.pi / 4
 ```
@@ -529,8 +529,8 @@ atan2(1, 1) # math.pi / 4
 Calculates the cosine of an angle.
 
 ```py
-from lighght import cos
-from lighght import PI
+from gh2 import cos
+from gh2 import PI
 
 cos(PI / 3) # 0.5
 ```
@@ -540,8 +540,8 @@ cos(PI / 3) # 0.5
 Converts a radian measurement to its corresponding value in degrees.
 
 ```py
-from lighght import degrees
-from lighght import PI
+from gh2 import degrees
+from gh2 import PI
 
 degrees(PI) # 180.0
 ```
@@ -551,7 +551,7 @@ degrees(PI) # 180.0
 Converts a degree measurement to its corresponding value in radians.
 
 ```py
-from lighght import radians
+from gh2 import radians
 
 radians(180.0) # math.pi
 ```
@@ -561,8 +561,8 @@ radians(180.0) # math.pi
 Calculates the sine of an angle.
 
 ```py
-from lighght import sin
-from lighght import PI
+from gh2 import sin
+from gh2 import PI
 
 sin(PI / 6) # 0.5
 ```
@@ -572,8 +572,8 @@ sin(PI / 6) # 0.5
 Calculates the ratio of the sine and cosine of an angle
 
 ```py
-from lighght import tan
-from lighght import PI
+from gh2 import tan
+from gh2 import PI
 
 tan(PI / 4) # 1
 ```
@@ -591,7 +591,7 @@ It was invented by Ken Perlin in the 1980s and been used since in graphical appl
 The resulting value will always be between 0.0 and 1.0. The noise value can be animated by moving through the noise space as demonstrated in the example above. As a general rule the smaller the difference between inputs, the smoother the resulting noise sequence will be.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 
 xoff = 0
@@ -622,7 +622,7 @@ gh.run()
 Adjusts the character and level of detail produced by the Perlin noise function. Similar to harmonics in physics, noise is computed over several octaves. Lower octaves contribute more to the output signal and as such define the overall intensity of the noise, whereas higher octaves create finer grained details in the noise sequence. By default, noise is computed over 4 octaves with each octave contributing exactly half than its predecessor, starting at 50% strength for the 1st octave. This falloff amount can be changed by adding an additional function parameter. Eg. a falloff factor of 0.75 means each octave will now have 75% impact (25% less) of the previous lower octave. Any value between 0.0 and 1.0 is valid, however note that values greater than 0.5 might result in greater than 1.0 values returned by noise(). By changing these parameters, the signal created by the noise() function can be adapted to fit very specific needs and characteristics.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 
 gh.full_screen()
@@ -654,7 +654,7 @@ gh.run()
 Sets the seed value for noise(). By default, noise() produces different results each time the program is run. Set the value parameter to a constant to return the same pseudo-random numbers each time the software is run.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 
 xoff = 0.0
@@ -694,7 +694,7 @@ If one argument is given and it is a number, returns a random number from 0 up t
 If two arguments are given, returns a random number from the first argument up to (but not including) the second argument.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 
 bar_width = 5
@@ -746,7 +746,7 @@ If one arg, that arg is the mean (standard deviation is 1).
 If two args, first is mean, second is standard deviation.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()
@@ -769,7 +769,7 @@ Sets the seed value for random().
 By default, random() produces different results each time the program is run. Set the seed parameter to a constant to return the same pseudo-random numbers each time the software is run.
 
 ```py
-import lighght as gh
+import gh2 as gh
 
 gh.full_screen()
 gh.no_cursor()
