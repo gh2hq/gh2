@@ -13,7 +13,7 @@ fill(255, 255, 0);
 rect(0, 0, 100, 100);
 ```
 
-![processnig color](https://raw.githubusercontent.com/charming-art/public-files/master/processing_color.png)
+![processnig color](https://raw.githubusercontent.com/gh2hq/public-files/master/processing_color.png)
 
 ## Ansi mode
 
@@ -37,7 +37,7 @@ app.rect(0, 0, 10, 10)
 app.run()
 ```
 
-![ansi color](https://raw.githubusercontent.com/charming-art/public-files/master/color.png)
+![ansi color](https://raw.githubusercontent.com/gh2hq/public-files/master/color.png)
 
 ## RGB color mode
 
@@ -74,7 +74,7 @@ for i in range(7):
 app.run()
 ```
 
-![rgb color](https://raw.githubusercontent.com/charming-art/public-files/master/rgb_color.png)
+![rgb color](https://raw.githubusercontent.com/gh2hq/public-files/master/rgb_color.png)
 
 ## HSB color mode
 
@@ -97,7 +97,7 @@ for h in range(360):
 app.run()
 ```
 
-![hsb color](https://raw.githubusercontent.com/charming-art/public-files/master/hsb_color.png)
+![hsb color](https://raw.githubusercontent.com/gh2hq/public-files/master/hsb_color.png)
 
 ## Double mode
 
@@ -125,7 +125,7 @@ app.circle(20, 10, 10)
 app.run()
 ```
 
-![double mode](https://raw.githubusercontent.com/charming-art/public-files/master/double_mode.png)
+![double mode](https://raw.githubusercontent.com/gh2hq/public-files/master/double_mode.png)
 
 :::important
 **Charming can't always get the right width of unicodes, so if you find something wrong when using unicodes, you can declare the width of that unicode directly.**

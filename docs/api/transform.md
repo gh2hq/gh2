@@ -21,7 +21,7 @@ cm.rect(0, 0, 5, 5)
 cm.run()
 ```
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_translate.png" />
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_translate.png" />
 
 <a name="scale" href="#scale">#</a> cm.**scale**(*sx*[, *sy*])
 
@@ -45,7 +45,7 @@ cm.rect(3, 2, 10, 6)
 cm.run()
 ```
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_scale.png" />
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_scale.png" />
 
 <a name="rotate" href="#rotate">#</a> cm.**rotate**(*x*)
 
@@ -70,7 +70,7 @@ cm.rect(-5, -5, 10, 10)
 cm.run()
 ```
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_rotate.png" />
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_rotate.png" />
 
 <a name="shear_x" href="#shear_x">#</a> cm.**shear_x**(*x*)
 
@@ -98,7 +98,7 @@ cm.run()
 
 ```
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_shear_x.png" />
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_shear_x.png" />
 
 <a name="shear_y" href="#shear_y">#</a> cm.**shear_y**(*x*)
 
@@ -124,4 +124,4 @@ cm.run()
 
 ```
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_shear_y.png" />
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_shear_y.png" />

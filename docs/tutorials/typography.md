@@ -36,7 +36,7 @@ app.text(head, 0, 5)
 app.run()
 ```
 
-![normal text](https://raw.githubusercontent.com/charming-art/public-files/master/text_normal.png)
+![normal text](https://raw.githubusercontent.com/gh2hq/public-files/master/text_normal.png)
 
 ## Big size
 
@@ -59,7 +59,7 @@ app.text('charming', 0, 10)
 app.run()
 ```
 
-![big text](https://raw.githubusercontent.com/charming-art/public-files/master/big_text.png)
+![big text](https://raw.githubusercontent.com/gh2hq/public-files/master/big_text.png)
 
 ## Large size
 
@@ -90,4 +90,4 @@ app.text(head, 0, 0)
 app.run()
 ```
 
-![large text](https://raw.githubusercontent.com/charming-art/public-files/master/text_large.png)
+![large text](https://raw.githubusercontent.com/gh2hq/public-files/master/text_large.png)

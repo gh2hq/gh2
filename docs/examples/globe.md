@@ -2,9 +2,9 @@
 
 A cherry blossom gif and a globe gif can create a wonderful world by Charming. [[source](../../examples/globe.py)]
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/example_globe_globe.gif" height="200px"/> &emsp; <img src="https://raw.githubusercontent.com/charming-art/public-files/master/example_globe_fall.gif" height="200px" />
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/example_globe_globe.gif" height="200px"/> &emsp; <img src="https://raw.githubusercontent.com/gh2hq/public-files/master/example_globe_fall.gif" height="200px" />
 
-![preview.md](https://raw.githubusercontent.com/charming-art/public-files/master/example_globe.gif)
+![preview.md](https://raw.githubusercontent.com/gh2hq/public-files/master/example_globe.gif)
 
 ```py
 import charming as cm

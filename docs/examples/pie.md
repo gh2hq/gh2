@@ -2,7 +2,7 @@
 
 There is a pie chart for mock data about the proportion of the population of different races. [[source](../../examples/pie.py)]
 
-![preview.md](https://raw.githubusercontent.com/charming-art/public-files/master/example_piechart.png)
+![preview.md](https://raw.githubusercontent.com/gh2hq/public-files/master/example_piechart.png)
 
 ```py
 import charming as cm

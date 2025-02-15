@@ -19,7 +19,7 @@ cm.arc(x, y, r * 2, r, 0, cm.HALF_PI, cm.PIE)
 cm.run()
 ```
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_half_pi.png" width="100%"/>
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_half_pi.png" width="100%"/>
 
 <a name="PI" href="#PI">#</a> cm.**PI**
 
@@ -40,7 +40,7 @@ cm.arc(x, y, r * 2, r, 0, cm.PI, cm.PIE)
 cm.run()
 ```
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_pi.png" width="100%"/>
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_pi.png" width="100%"/>
 
 <a name="QUARTER_PI" href="#QUARTER_PI">#</a> cm.**QUARTER_PI**
 
@@ -61,7 +61,7 @@ cm.arc(x, y, r * 2, r, 0, cm.QUARTER_PI, cm.PIE)
 cm.run()
 ```
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_quarter_pi.png" width="100%"/>
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_quarter_pi.png" width="100%"/>
 
 <a name="TWO_PI" href="#TWO_PI">#</a> cm.**TWO_PI**
 
@@ -82,7 +82,7 @@ cm.arc(x, y, r * 2, r, 0, cm.TWO_PI, cm.PIE)
 cm.run()
 ```
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_two_pi.png" width="100%"/>
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_two_pi.png" width="100%"/>
 
 <a name="TAU" href="#TAU">#</a> cm.**TAU**
 
@@ -103,4 +103,4 @@ cm.arc(x, y, r * 2, r, 0, cm.TAU, cm.PIE)
 cm.run()
 ```
   
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_tau.png" width="100%"/>
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_tau.png" width="100%"/>

@@ -15,7 +15,7 @@ size(900, 300);
 rect(0, 0, 100, 150);
 ```
 
-![processnig structure](https://raw.githubusercontent.com/charming-art/public-files/master/processing_structure_static.png)
+![processnig structure](https://raw.githubusercontent.com/gh2hq/public-files/master/processing_structure_static.png)
 
 ### Charming
 
@@ -32,7 +32,7 @@ app.rect(0, 0, 10, 10)
 app.run()
 ```
 
-![processnig static structure](https://raw.githubusercontent.com/charming-art/public-files/master/structure_static.png)
+![processnig static structure](https://raw.githubusercontent.com/gh2hq/public-files/master/structure_static.png)
 
 ## Active mode
 
@@ -56,7 +56,7 @@ void draw() {
 }
 ```
 
-![processnig active structure](https://raw.githubusercontent.com/charming-art/public-files/master/processing_structure_active.gif)
+![processnig active structure](https://raw.githubusercontent.com/gh2hq/public-files/master/processing_structure_active.gif)
 
 ### Charming
 
@@ -81,4 +81,4 @@ def draw():
 app.run()
 ```
 
-![active structure](https://raw.githubusercontent.com/charming-art/public-files/master/structure_active.gif)
+![active structure](https://raw.githubusercontent.com/gh2hq/public-files/master/structure_active.gif)

@@ -40,7 +40,7 @@ def draw():
 cm.run()
 ```
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_get_key.gif" width="100%"/>
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_get_key.gif" width="100%"/>
 
 <a name="get_key_code" href="#get_key_code">#</a> cm.**get_key_code**() : *number*
 
@@ -85,7 +85,7 @@ def key_pressed():
 cm.run()
 ```
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_get_key_code.gif" width="100%"/>
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_get_key_code.gif" width="100%"/>
 
 <a name="key_released" href="#key_released">#</a> cm.**key_released**(*foo*)
 
@@ -124,7 +124,7 @@ def key_released():
 cm.run()
 ```
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_get_key_code.gif" width="100%"/>
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_get_key_code.gif" width="100%"/>
 
 <a name="key_typed" href="#key_typed">#</a> cm.**key_typed**(*foo*)
 
@@ -163,7 +163,7 @@ def key_typed():
 cm.run()
 ```
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_get_key_code.gif" width="100%"/>
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_get_key_code.gif" width="100%"/>
 
 ## Mouse
 
@@ -199,7 +199,7 @@ def draw():
 cm.run()
 ```
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_get_mouse_pos.gif" width="100%"/>
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_get_mouse_pos.gif" width="100%"/>
 
 <a name="get_mouse_pressed" href="#get_mouse_pressed">#</a> cm.**get_mouse_pressed**() : *boolean*
 
@@ -233,7 +233,7 @@ def draw():
 cm.run()
 ```
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_get_mouse_button.gif" width="100%"/>
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_get_mouse_button.gif" width="100%"/>
 
 <a name="mouse_clicked" href="#mouse_clicked">#</a> cm.**mouse_clicked**(*foo*)
 
@@ -268,7 +268,7 @@ def mouse_clicked():
 cm.run()
 ```
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_get_mouse_button.gif" width="100%"/>
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_get_mouse_button.gif" width="100%"/>
 
 <a name="mouse_pressed" href="#mouse_pressed">#</a> cm.**mouse_pressed**(*foo*)
 
@@ -305,7 +305,7 @@ def mouse_pressed():
 cm.run()
 ```
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_get_mouse_button.gif" width="100%"/>
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_get_mouse_button.gif" width="100%"/>
 
 <a name="mouse_released" href="#mouse_released">#</a> cm.**mouse_released**(*foo*)
 
@@ -340,7 +340,7 @@ def mouse_released():
 cm.run()
 ```
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_get_mouse_button.gif" width="100%"/>
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_get_mouse_button.gif" width="100%"/>
 
 ## Cursor
 
@@ -416,4 +416,4 @@ def cursor_pressed():
 cm.run()
 ```
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_event_cursor.gif" width="100%"/>
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_event_cursor.gif" width="100%"/>

@@ -615,7 +615,7 @@ def draw():
 cm.run()
 ```
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_noise.gif" width="100%"/>
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_noise.gif" width="100%"/>
 
 <a name="noise_detail" href="#noise_detail">#</a> cm.**noise_detail**(*octaves=4*, *falloff=0.5*)
 
@@ -647,7 +647,7 @@ for j in range(cm.get_height()):
 cm.run()
 ```
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_noise_detail.png" width="100%"/>
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_noise_detail.png" width="100%"/>
 
 <a name="noise_seed" href="#noise_seed">#</a> cm.**noise_seed**(*seed*)
 
@@ -679,7 +679,7 @@ def draw():
 cm.run()
 ```
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_noise_seed.gif" width="100%"/>
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_noise_seed.gif" width="100%"/>
 
 <a name="random" href="#random">#</a> cm.**noise_seed**(*low*[, *high*])
 
@@ -733,7 +733,7 @@ def draw():
 cm.run()
 ```
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_random.gif" width="100%"/>
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_random.gif" width="100%"/>
 
 <a name="random_gaussian" href="#random_gaussian">#</a> cm.**random_gaussian**()
 
@@ -760,7 +760,7 @@ for y in range(cm.get_height()):
 cm.run()
 ```
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_random_gaussian.png" width="100%"/>
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_random_gaussian.png" width="100%"/>
 
 <a name="random_seed" href="#random_seed">#</a> cm.**random_seed**(*seed*)
 
@@ -784,4 +784,4 @@ for i in range(cm.get_width()):
 cm.run()
 ```
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_random_seed.png" width="100%"/>
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_random_seed.png" width="100%"/>

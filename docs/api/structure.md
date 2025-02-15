@@ -30,7 +30,7 @@ def draw():
 cm.run()
 ```
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_setup.gif" />
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_setup.gif" />
 
 <a name="draw" href="#draw">#</a> cm.**draw**(*foo*)
 
@@ -60,7 +60,7 @@ def draw():
 cm.run()
 ```
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_draw.gif" />
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_draw.gif" />
 
 <a name="run" href="#run">#</a> cm.**run**()
 
@@ -77,7 +77,7 @@ cm.rect(0, 0, 5, 5)
 cm.run()
 ```
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_run.png" />
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_run.png" />
 
 <a name="no_loop" href="#no_loop">#</a> cm.**no_loop**()
 
@@ -120,7 +120,7 @@ def mouse_clicked():
 cm.run()
 ```
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_loop.gif" />
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_loop.gif" />
 
 <a name="redraw" href="#redraw">#</a> cm.**redraw**()
 
@@ -155,7 +155,7 @@ def mouse_clicked():
 cm.run()
 ```
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_redraw.gif" />
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_redraw.gif" />
 
 <a name="push" href="#push">#</a> cm.**push**() <br/>
 <a name="pop" href="#pop">#</a> cm.**pop**()
@@ -182,7 +182,7 @@ cm.ellipse(35, 5, 10, 5)
 cm.run()
 ```
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_push.png" />
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_push.png" />
 
 <a name="open_context" href="#open_context">#</a> cm.**open_context**()
 
@@ -207,7 +207,7 @@ cm.ellipse(35, 5, 10, 5)
 cm.run()
 ```
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_push.png" />
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_push.png" />
 
 <a name="exit" href="#exit">#</a> cm.**exit**()
 
@@ -239,4 +239,4 @@ def mouse_clicked():
 cm.run()
 ```
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_exit.gif" />
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_exit.gif" />

@@ -1,4 +1,4 @@
-# preview: https://raw.githubusercontent.com/charming-art/public-files/master/test_ccolor.png
+# preview: https://raw.githubusercontent.com/gh2hq/public-files/master/test_ccolor.png
 
 import charming as cm
 

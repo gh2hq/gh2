@@ -2,9 +2,9 @@
 
 This is the art visualization for DFS algorithm, inspired by [Mike Bostock](https://bl.ocks.org/mbostock/11337835). [[source](../../examples/bfs.py)]
 
-![bfs](https://raw.githubusercontent.com/charming-art/public-files/master/example_dfs.gif)
+![bfs](https://raw.githubusercontent.com/gh2hq/public-files/master/example_dfs.gif)
 
-![bfs](https://raw.githubusercontent.com/charming-art/public-files/master/example_dfs.png)
+![bfs](https://raw.githubusercontent.com/gh2hq/public-files/master/example_dfs.png)
 
 ```py
 import charming as cm

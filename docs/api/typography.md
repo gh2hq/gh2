@@ -38,7 +38,7 @@ cm.text('h', 35, 5)
 cm.run()
 ```
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_text.png" />
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_text.png" />
 
 <a name="text_width" href="#text_width">#</a> cm.**text_width**(*text*) : *number*
 
@@ -66,7 +66,7 @@ cm.text(text, (width - cm.text_width(text)) / 2, th1 + th2)
 cm.run()
 ```
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_text_width.png" />
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_text_width.png" />
 
 <a name="text_align" href="#text_align">#</a> cm.**text_align**(*align_x*=LEFT | RIGHT | CENTER[, *align_y*=TOP | BOTTOM | MIDDLE])
 
@@ -100,7 +100,7 @@ cm.text(text, 0, 5)
 cm.run()
 ```
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_text_align_x.png" />
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_text_align_x.png" />
 
 ```py
 import charming as cm
@@ -131,7 +131,7 @@ cm.text(text, 20, 0)
 cm.run()
 ```
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_text_align_y.png" />
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_text_align_y.png" />
 
 <a name="text_size" href="#text_size">#</a> cm.**text_size**(*size*=NORMAL | BIG |LARGE))
 
@@ -156,7 +156,7 @@ cm.text(text, 0, 8)
 cm.run()
 ```
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_text_size.png" />
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_text_size.png" />
 
 <a name="text_height" href="#text_height">#</a> cm.**text_height**(*text*) : *number*
 
@@ -183,7 +183,7 @@ cm.text(text, 20, (height - cm.text_height(text)) / 2)
 cm.run()
 ```
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_text_height.png" />
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_text_height.png" />
 
 <a name="get_font_list" href="#get_font_list">#</a> cm.**get_font_list**(*text*, *x*, *y*) : *string[]*
 
@@ -225,4 +225,4 @@ cm.text(text, 0, th + th1)
 cm.run()
 ```
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_text_font.png" />
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_text_font.png" />

@@ -17,6 +17,6 @@ app.image(img, 0, 0, 60, 30)
 app.run()
 ```
 
-![image](https://raw.githubusercontent.com/charming-art/public-files/master/image.png)
+![image](https://raw.githubusercontent.com/gh2hq/public-files/master/image.png)
 
 <!-- ## Image Animation -->

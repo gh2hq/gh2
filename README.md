@@ -11,7 +11,7 @@ It is currently written in Python and provides Processing-like APIs, which aims 
 
 There are many reasons for creating Charming.py, but the most important one is that **I hope not only does Charming.py make you love programming for fun or show a magic world to you, but also make this journey relaxing and interesting.**
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/cover.png" alt="cover" width="100%">
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/cover.png" alt="cover" width="100%">
 
 ## 📎 Links
 
@@ -27,7 +27,7 @@ There are many reasons for creating Charming.py, but the most important one is t
 - **Powerful and Flexible**: Charming.py is not as same as [urwid](https://github.com/urwid/urwid) or [click](https://github.com/pallets/click) to build console line interface. Actually it more like [asciimatics](https://github.com/peterbrittain/asciimatics), [art](https://github.com/sepandhaghighi/art) or [tcharts](https://github.com/ProtoTeam/tcharts.js) to draw some visual effects in the terminal but with more flexibility. Instead of drawing limited and predefined shapes or effects, you can draw some basic primitives, custom shapes, curves, images, typography with transforms (translate, rotate, shear) and even events (mouse, keyboard) in Charming.py.
 - **Easy to Learn and Use**: Charming.py is very beginner-friendly, because of Python's simple syntax and [Processing](https://processing.org/)'s concise APIs. It will be more easier if you are already familiar with them. Once you've master Charming.py, you can create anything interesting in you head with it and enjoy the pure joy of coding.
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/hello_world.gif" alt="Charming" width="100%">
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/hello_world.gif" alt="Charming" width="100%">
 
 ## 📦 Installation
 
@@ -56,7 +56,7 @@ cm.run()
 $ python3 rect.py
 ```
 
-![get started](https://raw.githubusercontent.com/charming-art/public-files/master/get_started.png)
+![get started](https://raw.githubusercontent.com/gh2hq/public-files/master/get_started.png)
 
 ## 🛸 Future work
 

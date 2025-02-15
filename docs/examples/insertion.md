@@ -2,9 +2,9 @@
 
 This is visualization for insertion sort which shows the progress of sorting traditional Chinese mahjong. You can see that there is always a sorted prefix. [[source](../../examples/insertion.py)]
 
-![insertion](https://raw.githubusercontent.com/charming-art/public-files/master/example_insertion.gif)
+![insertion](https://raw.githubusercontent.com/gh2hq/public-files/master/example_insertion.gif)
 
-![insertion](https://raw.githubusercontent.com/charming-art/public-files/master/example_insertion.png)
+![insertion](https://raw.githubusercontent.com/gh2hq/public-files/master/example_insertion.png)
 
 ```py
 from random import shuffle

@@ -27,7 +27,7 @@ cm.image(img, 0, 0, 10, 5)
 cm.run()
 ```
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_cimage.png" />
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_cimage.png" />
 
 <a name="load_pixels" href="#load_pixels">#</a> CImage.**load_pixels**()
 
@@ -64,7 +64,7 @@ cm.image(img, 0, 0, 30, 15)
 cm.run()
 ```
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_cimage_method.png" />
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_cimage_method.png" />
 
 ## Display
 
@@ -86,7 +86,7 @@ cm.image(img, 0, 0, 30, 15)
 cm.run()
 ```
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_image.png" />
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_image.png" />
 
 <a name="load_image" href="#load_image">#</a> cm.**load_image**(*src*) : CImage
 
@@ -108,7 +108,7 @@ cm.run()
 
 If it loads a active image such as gif format, it will returns a CImage array.
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_image.png" />
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_image.png" />
 
 ```py
 import charming as cm
@@ -135,7 +135,7 @@ def draw():
 cm.run()
 ```
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_load_image.gif" />
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_load_image.gif" />
 
 <a name="no_tint" href="#no_tint">#</a> cm.**no_tint**()
 
@@ -157,7 +157,7 @@ cm.image(img, 32, 0, 30, 15)
 cm.run()
 ```
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_no_tint.png" />
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_no_tint.png" />
 
 <a name="tint" href="#tint">#</a> cm.**tint**(*ch*=" "[, *fg*[, *bg*]])<br>
 <a name="tint" href="#tint">#</a> cm.**tint**(*ccolor*)
@@ -177,4 +177,4 @@ cm.image(img, 0, 0, 30, 15)
 cm.run()
 ```
 
-<img src="https://raw.githubusercontent.com/charming-art/public-files/master/test_tint.png" />
+<img src="https://raw.githubusercontent.com/gh2hq/public-files/master/test_tint.png" />

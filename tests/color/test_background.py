@@ -1,4 +1,4 @@
-# preview: https://raw.githubusercontent.com/charming-art/public-files/master/test_background.gif
+# preview: https://raw.githubusercontent.com/gh2hq/public-files/master/test_background.gif
 
 import charming as cm
 
