@@ -7,3 +7,5 @@ venv
 *.egg-info
 *.log
 .pytest_cache
+node_modules
+**/.vitepress/cache
