@@ -6,3 +6,4 @@ dist/
 venv
 *.egg-info
 *.log
+.pytest_cache
