@@ -33,8 +33,9 @@ def _render(glyphs, margin_top, margin_bottom, margin_left):
         if margin_left > 0:
             output += " " * margin_left
         for j in range(width):
-            output += matrix[i][j][-1] if matrix[i][j] else " "
-        output += "\n"
+            output += str(matrix[i][j][-1] if matrix[i][j] else " ")
+        if i < height - 1:
+            output += "\n"
     if margin_bottom > 0:
         output += "\n" * margin_bottom
     return output

@@ -5,6 +5,11 @@
     "docs:preview": "vitepress preview src"
   },
   "devDependencies": {
+    "markdown-it-container": "^4.0.0",
     "vitepress": "^1.6.3"
+  },
+  "dependencies": {
+    "@xterm/addon-fit": "^0.10.0",
+    "@xterm/xterm": "^5.5.0"
   }
 }

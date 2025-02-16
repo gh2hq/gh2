@@ -1,4 +1,5 @@
-import { defineConfig } from "vitepress";
+import {defineConfig} from "vitepress";
+import terminal from "./markdown-it-terminal.js";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -6,27 +7,28 @@ export default defineConfig({
   description: "The creative coding language for ASCII art and poetic form",
   appearance: "force-dark",
   cleanUrls: true,
+  markdown: {
+    config: (md) => terminal(md),
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    nav: [{ text: "Examples", link: "/examples" }],
+    nav: [{text: "Examples", link: "/examples"}],
 
     sidebar: [
       {
         text: "Introduction",
         items: [
-          { text: "What is gh2?", link: "/what-is-gh2" },
-          { text: "Get Started", link: "/get-started" },
+          {text: "What is gh2?", link: "/what-is-gh2"},
+          {text: "Get Started", link: "/get-started"},
         ],
       },
       {
         text: "Tutorial",
-        items: [
-          { text: "Hello, Lighght!", link: "/hello-lighght" },
-        ],
+        items: [{text: "Hello Lighght", link: "/hello-lighght"}],
       },
-      { text: "Examples", link: "/examples" },
+      {text: "Examples", link: "/examples"},
     ],
 
-    socialLinks: [{ icon: "github", link: "https://github.com/gh2hq/gh2" }],
+    socialLinks: [{icon: "github", link: "https://github.com/gh2hq/gh2"}],
   },
 });
