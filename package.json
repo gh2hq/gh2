@@ -1,8 +1,9 @@
 {
   "scripts": {
-    "docs:dev": "vitepress dev src",
-    "docs:build": "vitepress build src",
-    "docs:preview": "vitepress preview src"
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "postinstall": "pip3 install -e . --use-pep517"
   },
   "devDependencies": {
     "markdown-it-container": "^4.0.0",
