@@ -12,10 +12,13 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /get-started
+      link: /docs/get-started
     - theme: alt
       text: What is gh2?
-      link: /what-is-gh2
+      link: /docs/what-is-gh2
+    - theme: alt
+      text: Examples
+      link: /examples/zeros
 
 features:
   - title: Customizable Margins
@@ -26,7 +29,7 @@ features:
     details: Stores art into string or prints to console based on margins and gylphs provided
 ---
 
-<div id="hero-name">
+<div id="hero-name" style="display:none">
   <img src="/logo.svg" style="padding-bottom:20px"/>
 </div>
 
@@ -39,6 +42,7 @@ onMounted(() => {
   const s = document.querySelector("#hero-name");
   if (!p || !s) return;
   while (p.lastChild) p.lastChild.remove();
+  s.style.display = "block";
   p.append(s);
 });
 

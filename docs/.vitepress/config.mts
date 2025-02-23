@@ -15,24 +15,27 @@ export default defineConfig({
     logo: "/icon.svg",
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      {text: "Examples", link: "/examples"},
+      {text: "Docs", link: "/docs/what-is-gh2"},
+      {text: "Examples", link: "/examples/zeros"},
       {text: "Editor", link: "https://editor.gh2.dev/"},
     ],
-    sidebar: [
-      {
-        text: "Introduction",
-        items: [
-          {text: "What is gh2?", link: "/what-is-gh2"},
-          {text: "Get Started", link: "/get-started"},
-          {text: "API Index", link: "/api-index"},
-        ],
-      },
-      {
-        text: "Tutorial",
-        items: [{text: "Hello Lighght", link: "/hello-lighght"}],
-      },
-      {text: "Examples", link: "/examples"},
-    ],
+    sidebar: {
+      "/docs": [
+        {
+          text: "Introduction",
+          items: [
+            {text: "What is gh2?", link: "/docs/what-is-gh2"},
+            {text: "Get Started", link: "/docs/get-started"},
+            {text: "API Index", link: "/docs/api-index"},
+          ],
+        },
+        {
+          text: "Tutorial",
+          items: [{text: "Hello Lighght", link: "/docs/hello-lighght"}],
+        },
+      ],
+      "/examples": [{text: "Zeros", link: "/examples/zeros"}],
+    },
     socialLinks: [{icon: "github", link: "https://github.com/gh2hq/gh2"}],
     footer: {
       message:
