@@ -30,7 +30,7 @@ features:
 ---
 
 <div id="hero-name" style="display:none">
-  <img src="/logo.svg" style="padding-bottom:20px"/>
+  <img src="/logo.svg"/>
 </div>
 
 <script setup>
@@ -43,6 +43,7 @@ onMounted(() => {
   if (!p || !s) return;
   while (p.lastChild) p.lastChild.remove();
   s.style.display = "block";
+  p.style.opacity = 1;
   p.append(s);
 });
 
@@ -53,6 +54,13 @@ onMounted(() => {
 .VPHero .text {
   font-size: 45px !important;
   line-height: 56px !important;
+}
+
+.name.clip {
+  height: 160px !important;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  margin-bottom: 20px !important;
 }
 
 .VPImage.image-src {
