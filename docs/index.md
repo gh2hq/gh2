@@ -8,7 +8,7 @@ hero:
   tagline: Create computational letterforms in the P5 style or explore the most fun way to learn Python
   image:
     src: /example.png
-    alt: Genji
+    alt: gh2-example
   actions:
     - theme: brand
       text: Get Started
@@ -26,6 +26,10 @@ features:
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
+<div id="hero-name">
+  <img src="/logo.svg" style="padding-bottom:20px"/>
+</div>
+
 <script setup>
 
 import {onMounted} from "vue";
@@ -33,19 +37,12 @@ import {onMounted} from "vue";
 onMounted(() => {
   const p = document.querySelector(".name.clip");
   const s = document.querySelector("#hero-name");
-  console.log(p, s)
   if (!p || !s) return;
   while (p.lastChild) p.lastChild.remove();
   p.append(s);
 });
 
 </script>
-
-<template>
-  <div id="hero-name">
-    <img src="/logo.svg" style="padding-bottom:20px"/>
-  </div>
-</template>
 
 <style>
 
