@@ -14,13 +14,17 @@ export default defineConfig({
   themeConfig: {
     logo: "/icon.svg",
     // https://vitepress.dev/reference/default-theme-config
-    nav: [{text: "Examples", link: "/examples"}],
+    nav: [
+      {text: "Examples", link: "/examples"},
+      {text: "Editor", link: "https://editor.gh2.dev/"},
+    ],
     sidebar: [
       {
         text: "Introduction",
         items: [
           {text: "What is gh2?", link: "/what-is-gh2"},
           {text: "Get Started", link: "/get-started"},
+          {text: "API Index", link: "/api-index"},
         ],
       },
       {
@@ -31,8 +35,9 @@ export default defineConfig({
     ],
     socialLinks: [{icon: "github", link: "https://github.com/gh2hq/gh2"}],
     footer: {
-      message: "Library released under <a style='text-decoration:underline;' href='https://github.com/gh2hq/gh2/blob/main/LICENSE'>ISC License</a>.",
-      copyright: `Copyright 2020–${new Date().getUTCFullYear()} Bairui Su.`
-    }
+      message:
+        "Library released under <a style='text-decoration:underline;' href='https://github.com/gh2hq/gh2/blob/main/LICENSE'>ISC License</a>.",
+      copyright: `Copyright 2020–${new Date().getUTCFullYear()} Bairui Su.`,
+    },
   },
 });

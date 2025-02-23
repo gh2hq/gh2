@@ -18,12 +18,12 @@ hero:
       link: /what-is-gh2
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Customizable Margins
+    details: Adjust top, bottom, and left margins for the generated art
+  - title: Glyph Placement
+    details: Place specific characters at coordinates within grid to form artwork
+  - title: Rendering
+    details: Stores art into string or prints to console based on margins and gylphs provided
 ---
 
 <div id="hero-name">
