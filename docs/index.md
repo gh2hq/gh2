@@ -6,6 +6,9 @@ hero:
   name: "gh2"
   text: "A Python library for creative ASCII art and poetic form"
   tagline: Create computational letterforms in the P5 style or explore the most fun way to learn Python
+  image:
+    src: /example.png
+    alt: Genji
   actions:
     - theme: brand
       text: Get Started
@@ -22,3 +25,36 @@ features:
   - title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
+
+<script setup>
+
+import {onMounted} from "vue";
+
+onMounted(() => {
+  const p = document.querySelector(".name.clip");
+  const s = document.querySelector("#hero-name");
+  console.log(p, s)
+  if (!p || !s) return;
+  while (p.lastChild) p.lastChild.remove();
+  p.append(s);
+});
+
+</script>
+
+<template>
+  <div id="hero-name">
+    <img src="/logo.svg" style="padding-bottom:20px"/>
+  </div>
+</template>
+
+<style>
+
+.VPHero .text {
+  font-size: 45px !important;
+  line-height: 56px !important;
+}
+
+.VPImage.image-src {
+  border-radius: 10px;
+}
+</style>
