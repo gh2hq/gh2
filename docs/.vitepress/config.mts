@@ -34,7 +34,10 @@ export default defineConfig({
           items: [{text: "Hello Lighght", link: "/docs/hello-lighght"}],
         },
       ],
-      "/examples": [{text: "Zeros", link: "/examples/zeros"}],
+      "/examples": [
+        {text: "Zeros", link: "/examples/zeros"},
+        {text: "Information", link: "/examples/information"},
+      ],
     },
     socialLinks: [{icon: "github", link: "https://github.com/gh2hq/gh2"}],
     footer: {
