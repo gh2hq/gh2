@@ -1,3 +1,30 @@
 .xterm-viewport {
   overflow-y: auto !important;
 }
+
+/* https://github.com/observablehq/plot/blob/main/docs/.vitepress/theme/custom.css */
+a.gh-open {
+  font-size: 12px;
+  position: absolute;
+  left: 100%;
+  margin-left: 8px;
+  color: var(--vp-c-text-2);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a.gh-open::after {
+  content: " ↗︎";
+  opacity: 0.5;
+}
+
+a.gh-open:hover {
+  color: var(--vp-c-brand);
+  text-decoration: none;
+}
+
+@media (max-width: 820px) {
+  a.gh-open {
+    display: none;
+  }
+}
