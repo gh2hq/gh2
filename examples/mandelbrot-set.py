@@ -10,7 +10,7 @@ for x0 in range(cols):
     for y0 in range(rows):
         x = gh.map(x0, 0, cols, -2, 1)
         y = gh.map(y0, 0, rows, -1.164, 1.164)
-        [a, b, i] = [x, y, 0]
+        [a, b, i] = [0, 0, 0]
         while (i < maxIter):
             [a, b] = [a ** 2 - b ** 2 + x, 2 * a * b + y]
             if (a ** 2 + b ** 2) > 4:
