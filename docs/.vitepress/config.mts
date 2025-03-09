@@ -37,6 +37,7 @@ export default defineConfig({
       "/examples": [
         {text: "Zeros", link: "/examples/zeros"},
         {text: "Information", link: "/examples/information"},
+        {text: "Mandelbrot Set", link: "/examples/mandelbrot-set"},
       ],
     },
     socialLinks: [{icon: "github", link: "https://github.com/gh2hq/gh2"}],

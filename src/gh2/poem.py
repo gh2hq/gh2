@@ -9,9 +9,11 @@ class _Poem:
         self.margin_left = left
         self.margin_top = top
         self.margin_bottom = bottom
+        return self
 
     def point(self, i, j, ch):
         self.glyphs.append((i, j, ch))
+        return self
 
     def content(self):
         return _render(self.glyphs, self.margin_top,
@@ -21,6 +23,7 @@ class _Poem:
     def print(self):
         output = self.content()
         print(output)
+        return self
 
 
 def _render(glyphs, margin_top, margin_bottom, margin_left):
